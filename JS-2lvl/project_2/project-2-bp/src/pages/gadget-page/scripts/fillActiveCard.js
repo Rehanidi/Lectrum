@@ -1,0 +1,23 @@
+export const fillCard = (card) => {
+  const title = document.getElementById('name');
+  const price = document.getElementById('price');
+  const memory = document.getElementById('memory');
+  const color = document.getElementById('color');
+  const processor = document.getElementById('processor');
+  const graphics = document.getElementById('graphics');
+  const brightness = document.getElementById('brightness');
+  const contrast = document.getElementById('contrast');
+  const matrix = document.getElementById('matrix');
+  const cameras = document.getElementById('cameras');
+  title.textContent = `${card.name} ${card.characteristics.memory} GB`;
+  price.textContent = `${card.price} $`;
+  memory.textContent = `${card.characteristics.memory} GB`;
+  color.textContent = `${card.characteristics.colors[0]}`;
+  processor.textContent = `${card.characteristics.processor}`;
+  graphics.textContent = `${card.characteristics.graphics}`;
+  brightness.textContent = `${card.characteristics.brightness} kd/м²`;
+  contrast.textContent = `${card.characteristics.contrast}`;
+  matrix.textContent = `${card.characteristics.matrix} Mp`;
+  cameras.textContent = `${card.characteristics.cameras}`;
+  console.log(card);
+};

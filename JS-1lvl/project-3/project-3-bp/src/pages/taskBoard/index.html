@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Прожектум: Задачи</title>
+</head>
+<body class="grid__layout"> 
+
+	<aside>
+		<div class="logo__section">
+			<img src="img/logo-white.svg" class="aside--logo" alt="">
+		</div>
+		<div class="user user__section flex">
+			<img src="img/userpic.jpg" class="user__icon" alt="">
+			<div>
+				<p class="user__name">Виктория Сметанникова</p>
+				<p class="user__role">Продакт овнер</p>
+			</div>
+		</div>
+		<div class="user__statistics flex">
+			<div class="tasks tasks--closed">
+				<p class="tasks__number">372</p>
+				<p class="tasks__description">задач выполнено</p>
+			</div>
+			<div class="tasks tasks--open">
+				<p class="tasks__number">11</p>
+				<p class="tasks__description">задач открыто</p>
+			</div>
+		</div>
+		<div class="menu section">
+			<h2 class="section__title">МЕНЮ</h2>
+			<ul class="menu__list">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Мои задачи</a></li>
+				<li class="notification"><a href="#">Уведомления <span class="notification__count">3</span></a></li>
+			</ul>
+		</div>
+		<div class="projects section">
+			<h2 class="section__title">ПРОЕКТЫ</h2>
+			<ul class="projects__list">
+				<li><a href="#"><img src="img/masks/mask1.jpg" class="projects__icon" alt="">Запуск приложения</a></li>
+				<li><a href="#"><img src="img/masks/mask2.jpg" class="projects__icon" alt="">Редизайн сайта</a></li>
+				<li><a href="#"><img src="img/masks/mask3.jpg" class="projects__icon" alt="">Чёрная пятница</a></li>
+				<li><a href="#"><img src="img/masks/mask4.jpg" class="projects__icon" alt="">Проект №07</a></li>
+			</ul>
+			<a href="#" class="projects--create">+ Добавить проект</a>
+		</div>
+		<div class="team section">
+			<h2 class="section__title">КОМАНДЫ</h2>
+			<div class="team__description flex">
+				<p class="team__side">Дизайнеры</p>
+				<div class="team__members flex">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+				</div>
+			</div>
+			<div class="team__description flex">
+				<p class="team__side">Бекенд</p>
+				<div class="team__members flex">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+				</div>
+			</div>
+			<div class="team__description flex">
+				<p class="team__side">Фронтенд</p>
+				<div class="team__members flex">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</aside>
+	<header>
+		<div class="prj prj__info flex">
+			<div class="prj__title__block flex">
+				<img class="prj__icon" src="img/masks/mask-big@2x.jpg" alt="">
+				<h1>Редизайн сайта</h1>
+				
+			</div>
+			<div class="members__block flex">
+				<img src="img/people/Oval-1.jpg" alt="">
+				<img src="img/people/Oval-1.jpg" alt="">
+				<img src="img/people/Oval-1.jpg" alt="">
+			</div>
+		</div>
+
+		<ul class="tab__navigation">
+			<li class="active"><a href="#">Задачи</a></li>
+			<li><a href="#">Канбан</a></li>
+			<li><a href="#">Календарь</a></li>
+		</ul>
+	</header>
+	
+	<!-- Для отображения формы добавления задачи заменить класс у элемента main на "task__setup" -->
+	<!-- Для отображения досок с задачами заменить класс у элемента main на "flex kanban__block" -->
+	<main class="flex kanban__block">
+
+		<div class="column task__column">
+			<div class="item__header">
+				<h2 class="item__title">Беклог</h2>
+				<a href="#" class="item__btn">+ Добавить задачу</a>
+			</div>
+
+			<a href="#" class="task task__block">
+				<p class="task__description">E-mail after registration so that I can confirm my</p>
+				<div class="flex">
+					<img src="img/userpic.jpg" class="task__executor" alt="">
+					<p class="task__label development">DEVELOPEMENT</p>
+				</div>
+			</a>
+
+			<a href="#" class="task task__block">
+				<p class="task__description">Find top 5 customers and get reviews from them</p>
+				<div class="flex">
+					<img src="img/userpic.jpg" class="task__executor" alt="">
+					<p class="task__label marketing">MARKETING</p>
+				</div>
+
+			</a>
+
+			<a href="#" class="task task__block">
+				<p class="task__description">Two-factor authentication to make private</p>
+				<div class="flex">
+					<img src="img/userpic.jpg" class="task__executor" alt="">
+					<p class="task__label design">DESIGN</p>
+				</div>
+				<img src="img/img_prev.jpg" class="task__img" alt="">
+			</a>
+		</div>
+
+		<div class="column task__column">
+			<div class="item__header">
+				<h2 class="item__title">Выполнить</h2>
+				<a href="#" class="item__btn">+ Добавить задачу</a>
+			</div>
+
+			<a href="#" class="task task__block">
+				<p class="task__description">Two-factor authentication to make private</p>
+				<div class="flex">
+					<img src="img/userpic.jpg" class="task__executor" alt="">
+					<p class="task__label design">DESIGN</p>
+				</div>
+
+			</a>
+
+			<a href="#" class="task task__block">
+				<p class="task__description">Find top 5 customers and get reviews from them</p>
+				<div class="flex">
+					<img src="img/userpic.jpg" class="task__executor" alt="">
+					<p class="task__label development">DEVELOPEMENT</p>
+				</div>
+				<img src="img/img_prev.jpg" class="task__img" alt="">
+
+			</a>
+
+			<a href="#" class="task task__block">
+				<p class="task__description">E-mail after registration so that I can confirm my</p>
+				<div class="flex">
+					<img src="img/userpic.jpg" class="task__executor" alt="">
+					<p class="task__label development">DEVELOPEMENT</p>
+				</div>
+				<img src="img/img_prev.jpg" class="task__img" alt="">
+
+			</a>
+		</div>
+
+		<div class="column task__column">
+			<div class="item__header">
+				<h2 class="item__title">Выполнено</h2>
+				<a href="#" class="item__btn">+ Добавить задачу</a>
+			</div>
+
+			<a href="#" class="task task__block">
+				<p class="task__description">E-mail after registration so that I can confirm my</p>
+				<div class="flex">
+					<img src="img/userpic.jpg" class="task__executor" alt="">
+					<p class="task__label development">DEVELOPEMENT</p>
+				</div>
+				<img src="img/img_prev.jpg" class="task__img" alt="">
+
+			</a>
+
+			<a href="#" class="task task__block">
+				<p class="task__description">E-mail after registration so that I can confirm my</p>
+				<div class="flex">
+					<img src="img/userpic.jpg" class="task__executor" alt="">
+					<p class="task__label marketing">MARKETING</p>
+				</div>
+
+			</a>
+
+		</div>
+
+		<!-- Добавить новую задачу -->
+		<div class="form form--task" style="display: none;">
+			<form action="" method="">
+				<h2>Добавить новую задачу</h2>
+				<hr>
+
+				<label for="taskTitle">Заголовок задачи</label>
+				<input type="text" id="taskTitle" placeholder="Заголовок задачи" class="gap--bottom" value="Подготовить макет Чёрной пятницы">
+
+				<label>Исполнитель</label>
+				<div class="dropdown  w-260 gap--bottom"><!-- dropdown--open -->
+	                <div class="dropdown__toggle "> <!-- active -->
+	                    <input class="form__input" type="text" id="executor" placeholder="Выберите исполнителя" readonly="">
+	                    <img src="img/icon/arr-bottom.svg" class="info__icon" alt="">
+	                </div>
+	                <div class="dropdown__list">
+	                    <div class="dropdown__list__item">
+	                        <p class="form__input">Исполнитель 1</p>
+	                    </div>
+	                    <div class="dropdown__list__item">
+	                        <p class="form__input">Исполнитель 2</p>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <fieldset class="flex gap--bottom">
+	            	<div class="w-230 gap--right">
+	            		<label for="deadline">Дедлайн</label>
+	            		<div class="input__wrapp">
+							<input type="text" id="deadline" placeholder="12 января 2020">
+							<img src="img/icon/calendar.svg" class="info__icon" alt="">
+	            			
+	            		</div>
+	            	</div>
+
+	            	<div class="w-200">
+	            		<label for="">Тег</label>
+	            		<div class="dropdown tag__dropdown"> <!-- dropdown--open -->
+			                <div class="dropdown__toggle"> <!-- active -->
+			                    <input class="form__input" type="text" id="executor" placeholder="Тег" readonly=""> 
+			                    <p class="label">маркетинг</p>
+			                    <img src="img/icon/add-icon.svg" class="info__icon" alt="">
+			                </div>
+			                <div class="dropdown__list">
+			                    <div class="dropdown__list__item">
+			                        <p class="form__input">Маркетинг</p>
+			                    </div>
+			                    <div class="dropdown__list__item">
+			                        <p class="form__input">Дизайн</p>
+			                    </div>
+			                    <div class="dropdown__list__item">
+			                        <p class="form__input">Финансы</p>
+			                    </div>
+			                    <div class="dropdown__list__item">
+			                        <p class="form__input">Бекенд</p>
+			                    </div>
+			                    <div class="dropdown__list__item">
+			                        <p class="form__input">Фронтенд</p>
+			                    </div>
+			                </div>
+			            </div>
+	            	</div>
+	            </fieldset>
+
+				<label for="taskDescription">Описание задачи</label>
+				<textarea id="taskDescription" ></textarea>
+
+
+				<input type="submit" value="Добавить новую задачу">
+			</form>
+		</div>
+	</main>
+</body>
+</html>

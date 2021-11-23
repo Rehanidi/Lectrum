@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Прожектум: Описание задачи</title>
+</head>
+<body class="grid__layout"> 
+
+	<aside>
+		<div class="logo__section">
+			<img src="img/logo-white.svg" class="aside--logo" alt="">
+		</div>
+		<div class="user user__section flex">
+			<img src="img/userpic.jpg" class="user__icon" alt="">
+			<div>
+				<p class="user__name">Виктория Сметанникова</p>
+				<p class="user__role">Продакт овнер</p>
+			</div>
+		</div>
+		<div class="user__statistics flex">
+			<div class="tasks tasks--closed">
+				<p class="tasks__number">372</p>
+				<p class="tasks__description">задач выполнено</p>
+			</div>
+			<div class="tasks tasks--open">
+				<p class="tasks__number">11</p>
+				<p class="tasks__description">задач открыто</p>
+			</div>
+		</div>
+		<div class="menu section">
+			<h2 class="section__title">МЕНЮ</h2>
+			<ul class="menu__list">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Мои задачи</a></li>
+				<li class="notification"><a href="#">Уведомления <span class="notification__count">3</span></a></li>
+			</ul>
+		</div>
+		<div class="projects section">
+			<h2 class="section__title">ПРОЕКТЫ</h2>
+			<ul class="projects__list">
+				<li><a href="#"><img src="img/masks/mask1.jpg" class="projects__icon" alt="">Запуск приложения</a></li>
+				<li><a href="#"><img src="img/masks/mask2.jpg" class="projects__icon" alt="">Редизайн сайта</a></li>
+				<li><a href="#"><img src="img/masks/mask3.jpg" class="projects__icon" alt="">Чёрная пятница</a></li>
+				<li><a href="#"><img src="img/masks/mask4.jpg" class="projects__icon" alt="">Проект №07</a></li>
+			</ul>
+			<a href="#" class="projects--create">+ Добавить проект</a>
+		</div>
+		<div class="team section">
+			<h2 class="section__title">КОМАНДЫ</h2>
+			<div class="team__description flex">
+				<p class="team__side">Дизайнеры</p>
+				<div class="team__members flex">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+				</div>
+			</div>
+			<div class="team__description flex">
+				<p class="team__side">Бекенд</p>
+				<div class="team__members flex">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+				</div>
+			</div>
+			<div class="team__description flex">
+				<p class="team__side">Фронтенд</p>
+				<div class="team__members flex">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</aside>
+	<header>
+		<div class="prj prj__info flex">
+			<div class="prj__title__block flex">
+				<img class="prj__icon" src="img/masks/mask-big@2x.jpg" alt="">
+				<h1>Редизайн сайта</h1>
+				
+			</div>
+			<div class="members__block flex">
+				<img src="img/people/Oval-1.jpg" alt="">
+				<img src="img/people/Oval-1.jpg" alt="">
+				<img src="img/people/Oval-1.jpg" alt="">
+			</div>
+		</div>
+
+		<ul class="tab__navigation">
+			<li><a href="#">Задачи</a></li>
+			<li class="active"><a href="#">Канбан</a></li>
+			<li><a href="#">Календарь</a></li>
+		</ul>
+
+		
+	</header>
+	<main class="task__layout flex">
+		<div class="tasks__column">
+			<div>
+				<div class="item__header">
+					<h2 class="item__title">Беклог</h2>
+					<a href="#" class="item__btn">+ Добавить задачу</a>
+				</div>
+
+				<a href="#" class="task task__block task--finished">
+					<span class="checkbox">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+						    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+						</svg>
+						<input type="checkbox">
+						
+					</span>
+					<div>
+						<p class="task__description">E-mail after registration so that I can confirm my</p>
+						<div class="flex">
+							<img src="img/userpic.jpg" class="task__executor" alt="">
+							<p class="task__label development">DEVELOPEMENT</p>
+						</div>
+					</div>					
+				</a>
+
+				<a href="#" class="task task__block">
+					<span class="checkbox">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+						    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+						</svg>
+						<input type="checkbox">
+
+					</span>
+					<div>
+						<p class="task__description">E-mail after registration so that I can confirm my</p>
+						<div class="flex">
+							<img src="img/userpic.jpg" class="task__executor" alt="">
+							<p class="task__label development">DEVELOPEMENT</p>
+						</div>
+					</div>					
+				</a>
+			</div>
+			<div>
+				<div class="item__header">
+					<h2 class="item__title">Выполнить</h2>
+					<a href="#" class="item__btn">+ Добавить задачу</a>
+				</div>
+
+				<a href="#" class="task task__block task--active">
+					<span class="checkbox">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+						    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+						</svg>
+						<input type="checkbox">
+					</span>
+					<div>
+						<p class="task__description">E-mail after registration so that I can confirm my</p>
+						<div class="flex">
+							<img src="img/userpic.jpg" class="task__executor" alt="">
+							<p class="task__label development">DEVELOPEMENT</p>
+						</div>
+					</div>					
+				</a>
+
+				<a href="#" class="task task__block">
+					<span class="checkbox">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+						    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+						</svg>
+						<input type="checkbox">
+					</span>
+					<div>
+						<p class="task__description">E-mail after registration so that I can confirm my</p>
+						<div class="flex">
+							<img src="img/userpic.jpg" class="task__executor" alt="">
+							<p class="task__label development">DEVELOPEMENT</p>
+						</div>
+					</div>					
+				</a>
+			</div>
+			
+		</div>
+
+		<div class="task__desctiption task__desctiption__card">
+			<div class="task__desctiption__header">
+				<div class="item__header task task--finished">
+					<div>
+						<h2 class="item__title">Find top 5 customer requests</h2>
+						<p class="author__list">Added by Kristin A. yesterday at 12:41pm</p>
+					</div>
+
+					<div class="checkbox checkbox--big">
+						<input type="checkbox" checked="">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+						    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+
+						</svg>
+					</div>
+				</div>
+
+				<div class="info__block flex">
+					<div class="execuror__block">
+						<p class="legend">Исполнитель</p>
+
+						<div class="executor flex">
+							<img src="img/userpic-big.jpg" alt="" class="executor__img">
+							<p class="executor__name">Linzell Bowman</p>
+						</div>
+					</div>
+					<div class="dueon__block">
+						<p class="legend legend--bold">DUE ON</p>
+						<p class="dueon__date legend">Tue, Dec 25</p>
+					</div>
+					<div class="tag__block">
+						<p class="legend legend--bold">TAG</p>
+						<p class="task__label development">DEVELOPEMENT</p>
+					</div>
+				</div>
+
+				<div class="task__desctiption__textarea">
+					<p>Описания задач используются при планировании проектов, исполнении проектов и контроле за ними. При планировании проекта описания задач используются для планирования объема работ и составления смет. Во время выполнения проекта описание задач используется теми, кто выполняет работы, чтобы обеспечить их правильное выполнение.</p>
+				</div>
+			</div>
+
+			<div class="task__desctiption__comments">
+				<div class="flex title">
+					<p class="label">Обсуждение задачи</p>
+
+					<img src="img/icon/sort.svg" alt="">
+				</div>
+
+				<div class="comment__input__wrapp form flex">
+					<img src="img/userpic-big.jpg" class="comment__icon" alt="">
+					<input type="text" class="comment__input" placeholder="Добавить комментарий">
+					<input type="submit" class="comment__submit" value="Коментировать">
+				</div>
+
+				<div class="comment__history">
+					<div class="commet comment__block">
+						<div class="commet__icon">
+							<img src="img/userpic-big.jpg" alt="">
+						</div>
+						<div class="commet__text__wrapp">
+							<p class="commet__name">Елена Стрельцова,<span class="commet__role">дизайнер</span></p>
+
+							<p class="commet__text">During a project build, it is necessary to evaluate the product design and development against project requirements and outcomes</p>
+
+							<p class="commet__date">Вчера, 12:37</p>
+						</div>
+					</div>
+					<div class="commet comment__block">
+						<div class="commet__icon">
+							<img src="img/userpic-big.jpg" alt="">
+						</div>
+						<div class="commet__text__wrapp">
+							<p class="commet__name">Prescott MacCaffery,<span class="commet__role">Developer</span></p>
+
+							<p class="commet__text"><a href="#" class="person__tag">@Helena</a> Software quality assurance activity in which one or several humans check a program mainly </p>
+
+							<p class="commet__date">Yesterday at 12:37pm</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+	</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+@mixin button{
+    width: 300px;
+    height: 60px;
+    background: #FFC56E 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    text-align: center;
+    font: normal normal bold 18px/0px Merriweather-Bold;
+    letter-spacing: 0.36px;
+    color: #000000;
+    opacity: 1;
+
+    a{
+        text-decoration: none;
+        color: #000000;
+    }
+}

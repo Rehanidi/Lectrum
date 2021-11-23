@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Merriweather-Black';
+    src: url(Merriweather-Black.ttf) format("opentype");
+}
+@font-face {
+    font-family: 'Merriweather-BlackItalic';
+    src: url(Merriweather-BlackItalic.ttf) format("opentype");
+}
+@font-face {
+    font-family: 'Merriweather-Bold';
+    src: url(Merriweather-Bold.ttf) format("opentype");
+}
+@font-face {
+    font-family: 'Merriweather-BoldItalic';
+    src: url(Merriweather-BoldItalic.ttf) format("opentype");
+}
+@font-face {
+    font-family: 'Merriweather-Italic';
+    src: url(Merriweather-Italic.ttf) format("opentype");
+}
+@font-face {
+    font-family: 'Merriweather-Light';
+    src: url(Merriweather-Light.ttf) format("opentype");
+}
+@font-face {
+    font-family: 'Merriweather-LightItalic';
+    src: url(Merriweather-LightItalic.ttf) format("opentype");
+}
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url(Merriweather-Regular.ttf) format("opentype");
+}
+
+
+

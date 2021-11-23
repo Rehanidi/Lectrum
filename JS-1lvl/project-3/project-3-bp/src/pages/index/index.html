@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Прожектум: Регистрация</title>
+</head>
+<body class="flex flex--center" > 
+	<!-- Регистрация в Прожектуме -->
+	<div class="form form--registration">
+		<img src="img/logo.svg" alt="" class="form__logo">
+
+		<form action="" method="">
+			<label for="email">Электропочта</label>
+			<input type="email" id="email" placeholder="email@example.com" class="gap--bottom">
+
+			<label for="pass">Пароль</label>
+			<input type="password" id="pass" class="gap--bottom">
+
+			<label for="user">Имя и Фамилия</label>
+			<input type="text" id="user" placeholder="Иван Плотников" class="gap--bottom">
+
+			<input type="submit" value="Зарегистрироваться">
+
+		</form>
+		<div class="additional__info">
+			<p>Уже зарегистрированы?</p>
+			<a href="#">Войти в систему</a>
+		</div>
+	</div>
+
+	<!-- Вход в Прожектум -->
+	<div class="form form--login" style="display: none">
+		<img src="img/logo.svg" alt="" class="form__logo">
+
+		<form action="" method="">
+			<label for="email">Электропочта</label>
+			<input type="email" id="email" placeholder="email@example.com" class="gap--bottom">
+
+			<label for="pass">Пароль</label>
+			<input type="password" id="pass" >
+
+			<input type="submit" value="Зарегистрироваться">
+
+		</form>
+		<div class="additional__info">
+			<p>Еще нет учётной записи? </p>
+			<a href="#">Зарегистироваться</a>
+		</div>
+	</div>
+
+	<!-- Set Up -->
+	<div class="form form--setup" style="display: none">
+		<img src="img/logo-small.svg"  class="logo--compressed" alt="">
+		<h1>Выберите команду</h1>
+
+		<form action="" method="">
+			<fieldset class="team__select__layout flex">
+				<label class="radiobtn__immitation" for="marketing">
+					<input type="radio" id="marketing" name="teamSelect">
+					<span class="checkmark">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+						    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+						</svg>
+					</span>Маркетинг
+				</label>
+				<label class="radiobtn__immitation" for="sales">
+					<input type="radio" id="sales" name="teamSelect">
+					<span class="checkmark">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+						    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+						</svg>
+					</span>Продажи
+				</label>
+				<label class="radiobtn__immitation" for="finance">
+					<input type="radio" id="finance" name="teamSelect">
+					<span class="checkmark">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+						    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+						</svg>
+					</span>Финансы
+				</label>
+				<label class="radiobtn__immitation" for="design">
+					<input type="radio" id="design" name="teamSelect">
+					<span class="checkmark">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+						    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+						</svg>
+					</span>Дизайн
+				</label>
+				<label class="radiobtn__immitation" for="backend">
+					<input type="radio" id="backend" name="teamSelect">
+					<span class="checkmark">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+						    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+						</svg>
+					</span>Бекенд
+				</label>
+				<label class="radiobtn__immitation" for="frontend">
+					<input type="radio" id="frontend" name="teamSelect">
+					<span class="checkmark">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+						    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+						</svg>
+					</span>Фронтенд
+				</label>
+			</fieldset>
+			
+			<input type="submit" value="Вперёд!">
+
+		</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zavidovo - Gadget</title>
+</head>
+<body>
+	<nav>
+		<div class="container nav_header">
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt="Logo">
+			</a>
+
+			<!-- Что бы показать скрытый элемент нужно убрать у элемента класс selected -->
+			<a href="#" class="btn-red hidden">Добавить гаджет</a>
+
+			<div id="profile" class="profile hidden">
+				<img src="img/icon/avatar.jpg" class="profile_photo" alt="">
+				<p id="profileName" class="profile_name">Иван Пасикун</p>
+			</div>
+
+			<a id="cartIcon" href="#" class="cart_block">
+				<img src="img/icon/cart.svg" alt="Cart icon">
+			</a>
+
+			<button id="loginBtn" class="btn-blue">Войти</button>
+			<button id="logoutBtn" class="btn-blue" style="display: none;">Выйти</button>
+		</div>
+		<hr>
+		<div class="container nav_bottom">
+			<ul class="nav_list">
+				<li><a href="#">Популярное</a></li>
+				<li><a href="#">Мобильные телефоны</a></li>
+				<li><a href="#">Часы</a></li>
+				<li><a href="#">Умные колонки</a></li>
+				<li><a href="#">Наушники</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<section class="product-info_section container">
+			<div class="gadget_title">
+				<h1 id="name">Apple iPhone 8 Plus 128 GB</h1>
+				<button id="editButton" class="btn-red hidden">Редактировать</button>
+
+			</div>
+			<div class="short_description">
+				<div class="product_image">
+					<img src="img/product-img.png" alt="Product img">
+				</div>
+				<div class="product_characteristic">
+
+					<div class="data-item">
+						<p class="item-legend">Цвет</p>
+
+						<div class="item-value">
+							<!-- Что бы показать выбранный элемент нужно добавить элементу класс selected -->
+							<div class="circle ">
+								<div class="color" style="background-color: #F9E3CC;"></div>
+							</div>
+							<div class="circle selected">
+								<div class="color" style="background-color: #3A3A3A;"></div>
+							</div>
+							<div class="circle ">
+								<div class="color" style="background-color: #FDBDBA;"></div>
+							</div>
+							<div class="circle ">
+								<div class="color" style="background-color: #EEEFF1;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="data-item">
+						<p class="item-legend">Память</p>
+
+						<div class="item-value">
+							<!-- Что бы показать выбранный элемент нужно добавить элементу класс selected -->
+							<div class="param">
+								<p>64 GB</p>
+							</div>
+							<div class="param selected">
+								<p>128 GB</p>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="price_block">
+						<p id="price" class="price">835 $</p>
+						<p class="availability">В наличии</p>
+
+						<button>Добавить в корзину</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container">
+			<!--
+				Для работы переключателя требуется:
+					- в блоке tab_navigation нужному li из списка  добавить класс active
+					- блоку tab_pane добавить класс show
+			-->
+			<div class="tab_section">
+				<div class="tab_navigation">
+					<ul id="tabs">
+						<li id="characteristics" class="active">Характеристики</li>
+						<li id="reviews">Отзывы</li>
+					</ul>
+				</div>
+				<div id="characteristicsPane" class="tab_pane show">
+					<table>
+					  <caption>Основные характиристики</caption>
+						<tr>
+							<td>Память</td>
+							<td id="memory">128 GB</td>
+						</tr>
+						<tr>
+							<td>Цвет</td>
+							<td id="color">Черный</td>
+						</tr>
+					</table>
+					<table>
+					  <caption>Вычислительная мощность</caption>
+						<tr>
+							<td>Процессор</td>
+							<td id="processor">A11 Bionic</td>
+						</tr>
+						<tr>
+							<td>Графика</td>
+							<td id="graphics">A11 Bionic</td>
+						</tr>
+					</table>
+					<table>
+					  <caption>Дисплей</caption>
+						<tr>
+							<td>Яркость</td>
+							<td id="brightness">625 kd/м²</td>
+						</tr>
+						<tr>
+							<td>Контрастность</td>
+							<td id="contrast">1400:1</td>
+						</tr>
+					</table>
+					<table>
+					  <caption>Камера</caption>
+						<tr>
+							<td>Разрешение матрицы</td>
+							<td id="matrix">12 Mp</td>
+						</tr>
+						<tr>
+							<td>Количество камер</td>
+							<td id="cameras">2</td>
+						</tr>
+					</table>
+				</div>
+				<div id="reviewsPane" class="tab_pane">
+					<div class="feedback_layout">
+						<div class="feedback_list">
+							<h2><span>2</span>&nbsp;<span>отзыва</span></h2>
+							<div id="userReviews">
+								<article>
+									<p class="name">Сергей Иванов<img src="img/icon/close-red.svg" class="close-icon" alt="Close icon"></p>
+									<div class="feedback_info pros">
+										<p class="feedback_title">Преимущества</p>
+										<p class="feedback_content">Скорость работы. Удобство. Ужасно удобная система 100% передачи
+										данных с прошлого iPhone. Остался очень доволен наушниками.</p>
+									</div>
+									<div class="feedback_info cons">
+										<p class="feedback_title">Недостатки</p>
+										<p class="feedback_content">Телефон тяжелый… т.е. сам по себе еще норм, но если в чехле,  то прям
+										тяжко  (я решил для себя в первую неделю или две походить чисто с защитным задним стеклом). что Заднее стекло быстро царапается.</p>
+									</div>
+								</article>
+
+								<article>
+									<p class="name">Петр Сергеев<img src="img/icon/close-red.svg" class="close-icon" alt="Close icon"></p>
+
+									<div class="feedback_info pros">
+										<p class="feedback_title">Преимущества</p>
+										<p class="feedback_content">Бомба-камере. После  прошлого разница очень заметна. По скорости работы ок. К тому же, заряд сохраняется лучше, звук громче и сеть ловит почти везде</p>
+									</div>
+									<div class="feedback_info cons">
+										<p class="feedback_title">Недостатки</p>
+										<p class="feedback_content">После того, как он сам по себе выключился,  потом повис так жестко, что я не мог даже выключить его. Через пару минут очнулся. Надеюсь, что это было из-за новой прошивки. :-(</p>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="feedback_form">
+							<h2>Оставить свой отзыв</h2>
+
+							<form action="" method="">
+								<input type="text" name="name" placeholder="Имя">
+								<textarea name="pros" placeholder="Преимущества"></textarea>
+								<textarea name="cons" placeholder="Недостатки"></textarea>
+
+								<input type="submit" class="btn-blue" value="Добавить отзыв">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container footer_header">
+			<div class="short-info_block">
+
+				<a href="#" class="logo">
+					<img src="img/logo.svg" alt="">
+				</a>
+
+				<a class="contacts_link" href="mailto:zavidovo@lectrum.io">zavidovo@lectrum.io</a>
+				<a class="contacts_link" href="tel:+ 380 44 333 6011">+ 380 44 333 6011</a>
+
+
+				<div class="social-media_block">
+					<a href="#">
+						<img src="img/icon/instagram-logo.svg" alt="Instagram logo">
+					</a>
+					<a href="#">
+						<img src="img/icon/facebook-logo.svg" alt="Facebook logo">
+					</a>
+					<a href="#">
+						<img src="img/icon/twitter-logo.svg" alt="Twitter logo">
+					</a>
+				</div>
+			</div>
+
+			<ul class="footer_nav_list">
+				<li class="list-title">Покупателям</li>
+				<li><a href="#">Помощь с выбором</a></li>
+				<li><a href="#">Экспертиза</a></li>
+				<li><a href="#">Отзывы</a></li>
+			</ul>
+
+			<ul class="footer_nav_list">
+				<li class="list-title">Каталог</li>
+				<li><a href="#">Мобильные телефоны</a></li>
+				<li><a href="#">Часы</a></li>
+				<li><a href="#">Умные колонки</a></li>
+				<li><a href="#">Наушники</a></li>
+			</ul>
+
+			<ul class="footer_nav_list">
+				<li class="list-title">Помощь</li>
+				<li><a href="#">Бонусные карты</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Оплата</a></li>
+			</ul>
+
+			<ul class="footer_nav_list">
+				<li class="list-title">Завидово</li>
+				<li><a href="#">Компания</a></li>
+				<li><a href="#">Работа у нас</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="container footer_footer">
+			<p>2020 © Завидово. Все права защищены</p>
+		</div>
+	</footer>
+
+	<!--
+		Что бы показать попап требуется:
+			- блоку popup_back добавить класс visible
+			- нужному попапу добавить класс popup-show
+	-->
+
+	<div class="popup_back"></div>
+
+	<div class="popup_form popup_login ">
+
+		<img src="img/icon/close.svg" class="close-icon" alt="Close icon">
+
+		<div class="tab_section">
+			<div class="tab_navigation">
+				<ul>
+					<li>Регистрация</li>
+					<li class="active">Логин</li>
+				</ul>
+			</div>
+			<div class="tab_pane show">
+				<form action="" method="">
+					<fieldset>
+						<label for="signInEmail">Электропочта</label>
+						<input type="email" id="signInEmail" placeholder="example@gmail.com">
+					</fieldset>
+					<fieldset>
+						<label for="signInPassword">Пароль</label>
+						<input type="password" id="signInPassword" placeholder="secretpassword">
+					</fieldset>
+
+					<input type="submit" class="btn-blue">
+				</form>
+			</div>
+
+			<div class="tab_pane">
+				<form action="" method="">
+					<fieldset>
+						<label for="username">Имя</label>
+						<input type="text" id="username" placeholder="username">
+					</fieldset>
+					<fieldset>
+						<label for="signUpEmail">Электропочта</label>
+						<input type="email" id="signUpEmail" placeholder="example@gmail.com">
+					</fieldset>
+					<fieldset>
+						<label for="signUpPassword">Пароль</label>
+						<input type="password" id="signUpPassword" placeholder="secretpassword">
+					</fieldset>
+
+					<input type="submit" class="btn-blue">
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_form popup_cart">
+		<img src="img/icon/close.svg" class="close-icon" alt="Close icon">
+
+		<h2>Корзина</h2>
+		<div class="receipt_list">
+			<div class="cart_item">
+				<p class="item_name">Apple HomePod</p>
+				<p class="item_price">$250</p>
+				<input type="text" class="item_count" value="2">
+
+				<div class="control-remove">
+					<img src="img/icon/plus.svg" alt="">
+				</div>
+
+			</div>
+			<div class="cart_item">
+				<p class="item_name">Apple HomePod</p>
+				<p class="item_price">$250</p>
+				<input type="text" class="item_count" value="2">
+
+				<div class="control-remove">
+					<img src="img/icon/plus.svg" alt="">
+				</div>
+
+			</div>
+		</div>
+		<div class="total-cost_block">
+			<p class="total-cost_label">Общая стоимость:</p>
+
+			<p class="total-cost_cost">$<span id="total">850</span></p>
+		</div>
+		<a href="#" class="btn-blue">Оформить заказ</a>
+	</div>
+</body>
+</html>

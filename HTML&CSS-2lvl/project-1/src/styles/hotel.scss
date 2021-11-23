@@ -1,0 +1,262 @@
+@import "mixins/mixin";
+
+.owl-stage-outer{
+    .owl-stage{
+        .owl-item{
+            width: 800px;
+        }
+    }
+}
+
+
+.hotel{
+
+    &__container{
+        max-width: 1440px;
+        height: auto;
+        margin: 0 auto;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        padding-top: 120px;
+        padding-bottom: 76.5px;
+
+        .hotel__title{
+            text-align: center;
+            font: normal normal bold 40px/100px Merriweather-Bold;
+            letter-spacing: 0.8px;
+            color: #000000;
+            opacity: 1;
+            margin-bottom: 70px;
+
+            br{
+                display: none;
+            }
+        }
+
+
+        .hotel__benefits{
+            display: flex;
+
+            .hotel__images{
+                max-width: 55.56%;
+                height: auto;
+            }
+
+            .owl-dots{
+                width: 120px;
+                height: 14px;
+                display: flex;
+                margin-right: 42.5%;
+                margin-left: 42.5%;
+                margin-top: 29.5px;
+
+                .owl-dot{
+                    width: 8px;
+                    height: 8px;
+                    background: #12181D 0% 0% no-repeat padding-box;
+                    opacity: 0.4;
+                    border-radius: 50%;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+
+                .owl-dot:not(:last-child){
+                    margin-right: 20px;
+                }
+
+                .owl-dot:hover{
+                    width: 14px;
+                    height: 14px;
+                    background: #04326B 0% 0% no-repeat padding-box;
+                    opacity: 1;
+                }
+            }
+
+            .hotel__desc{
+                padding-top: 12px;
+                padding-right: 10.139%;
+                padding-left: 5.417%;
+
+                .desc-title{
+                    height: auto;
+
+                    h2{
+                        text-align: left;
+                        font: normal normal bold 28px/36px Merriweather-Bold;
+                        letter-spacing: 0.56px;
+                        color: #000000;
+                        opacity: 1;
+                    }
+                }
+
+                p{
+                    text-align: left;
+                    font: normal normal normal 16px/30px Merriweather-Regular;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+                    margin-top: 34px;
+                }
+
+                .hotel-button{
+                    width: auto;
+                    margin-top: 60px;
+
+                    button{
+                        @include button;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hotel{
+
+        &__container{
+            max-width: 1024px;
+            padding-top: 100px;
+            padding-bottom: 73px;
+
+            .hotel__title{
+                font: normal normal bold 32px/70px Merriweather-Bold;
+                letter-spacing: 0.34px;
+                padding-right: 24.61%;
+                margin-bottom: 50px;
+                padding-left: 24.02%;
+            }
+
+            .hotel__benefits{
+
+                .hotel__images{
+                    max-width: 55.56%;
+                    height: auto;
+                }
+
+
+                .owl-dots{
+                    width: 85px;
+                    height: 10px;
+                    margin-right: 42.46%;
+                    margin-left: 42.46%;
+                    margin-top: 17px;
+
+                    .owl-dot{
+                        width: 5.69px;
+                        height: 5.69px;
+                    }
+
+                    .owl-dot:not(:last-child){
+                        margin-right: 14.14px;
+                    }
+
+                    .owl-dot:hover{
+                        width: 9.96px;
+                        height: 9.96px;
+                    }
+                }
+
+                .hotel__desc{
+                    padding-top: 8px;
+                    padding-right: 5.57%;
+                    padding-left: 5.76%;
+
+                    .desc-title{
+
+                        h2{
+                            font-size: 20px;
+                            line-height: 25px;
+                            letter-spacing: 0.4px;
+                        }
+                    }
+
+                    p{
+                        font-size: 13px;
+                        line-height: 21px;
+                        margin-top: 24px;
+                    }
+
+                    .hotel-button{
+                        margin-top: 42px;
+
+                        button{
+                            width: 254px;
+                            height: 50px;
+                            font-size: 15px;
+                            letter-spacing: 0.3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .hotel{
+
+        &__container{
+            max-width: 680px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            .hotel__title{
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.36px;
+                padding-right: 22.1875%;
+                padding-left: 22.1875%;
+                margin-bottom: 24px;
+
+                br{
+                    display: block;
+                }
+            }
+
+            .hotel__benefits{
+                display: block;
+
+                .hotel__images{
+                    width: 100%;
+                }
+
+                .owl-dots{
+                    display: none;
+                }
+
+                .hotel__desc{
+                    padding-top: 24px;
+                    padding-right: 8.75%;
+                    padding-left: 5%;
+
+                    .desc-title{
+
+                        h2{
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: 0.32px;
+                        }
+                    }
+
+                    p{
+                        font-size: 14px;
+                        margin-top: 18px;
+                    }
+
+                    .hotel-button{
+                        margin-top: 24px;
+                        text-align: center;
+
+                        button{
+                            width: 200px;
+                            height: 40px;
+                            font-size: 12px;
+                            letter-spacing: 0.24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

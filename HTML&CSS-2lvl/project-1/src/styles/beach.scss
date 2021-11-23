@@ -1,0 +1,258 @@
+@import "mixins/mixin";
+
+.beach{
+
+    &__container{
+        max-width: 1440px;
+        height: auto;
+        margin: 0 auto;
+        background: #ECEEEF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        padding-top: 120px;
+        padding-bottom: 83px;
+
+        .beach__title{
+            text-align: center;
+            font: normal normal bold 40px/50px Merriweather-Bold;
+            letter-spacing: 0.8px;
+            color: #000000;
+            opacity: 1;
+            margin-bottom: 70px;
+        }
+
+        .beach__benefits{
+            display: flex;
+
+            .beach__desc{
+                order: 1;
+                padding-top: 12px;
+                padding-right: 6.875%;
+                padding-left: 10.416%;
+
+                .desc-title{
+                    height: auto;
+
+                    h2{
+                        text-align: left;
+                        font: normal normal normal 28px/60px Merriweather-Bold;
+                        letter-spacing: 0px;
+                        color: #000000;
+                        opacity: 1;
+                    }
+                }
+
+                p{
+                    text-align: left;
+                    font: normal normal normal 15px/28px Merriweather-Regular;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+                    margin-top: 30px;
+                }
+
+                .beach-button{
+                    width: auto;
+                    margin-top: 101px;
+
+                    button{
+                        @include button;
+                    }
+                }
+            }
+
+            .beach__images{
+                width: 55.56%;
+                height: auto;
+                order: 2;
+
+                .item{
+                    object-fit: cover;
+                }
+            }
+
+            .owl-dots{
+                width: 120px;
+                height: 14px;
+                display: flex;
+                margin-right: 42.5%;
+                margin-left: 42.5%;
+                margin-top: 29.5px;
+
+                .owl-dot{
+                    width: 8px;
+                    height: 8px;
+                    background: #12181D 0% 0% no-repeat padding-box;
+                    opacity: 0.4;
+                    border-radius: 50%;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+
+                .owl-dot:not(:last-child){
+                    margin-right: 20px;
+                }
+
+                .owl-dot:hover{
+                    width: 14px;
+                    height: 14px;
+                    background: #04326B 0% 0% no-repeat padding-box;
+                    opacity: 1;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .beach{
+
+        &__container{
+            max-width: 1024px;
+            padding-top: 100px;
+            padding-bottom: 73px;
+
+            .beach__title{
+                font: normal normal bold 32px/60px Merriweather-Bold;
+                letter-spacing: 0.64px;
+                margin-bottom: 50px;
+                padding-right: 30.5%;
+                padding-left: 32.2%;
+            }
+
+            .beach__benefits{
+
+                .beach__desc{
+                    padding-top: 18px;
+                    padding-right: 5.37%;
+                    padding-left: 5.86%;
+
+                    .desc-title{
+
+                        h2{
+                            font-weight: bold;
+                            font-size: 20px;
+                            line-height: 25px;
+                            letter-spacing: 0.4px;
+                        }
+                    }
+
+                    p{
+                        font-size: 13px;
+                        line-height: 21px;
+                        margin-top: 24px;
+                    }
+
+                    .beach-button{
+                        margin-top: 42px;
+
+                        button{
+                            width: 254px;
+                            height: 50px;
+                            font-size: 15px;
+                            letter-spacing: 0.3px;
+                        }
+                    }
+                }
+
+                .beach__images{
+                    width: 55.66%;
+                }
+
+                .owl-dots{
+                    width: 85px;
+                    height: 10px;
+                    margin-right: 42.46%;
+                    margin-left: 42.46%;
+                    margin-top: 17px;
+
+                    .owl-dot{
+                        width: 5.69px;
+                        height: 5.69px;
+                    }
+
+                    .owl-dot:not(:last-child){
+                        margin-right: 14.14px;
+                    }
+
+                    .owl-dot:hover{
+                        width: 9.96px;
+                        height: 9.96px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .beach{
+
+        &__container{
+            max-width: 680px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            .beach__title{
+                font-size: 17px;
+                line-height: 23px;
+                letter-spacing: 0.36px;
+                padding-right: 16.5625%;
+                padding-left: 16.5625%;
+                margin-bottom: 24px;
+            }
+
+            .beach__benefits{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-auto-rows: minmax(auto, auto);
+
+                .beach__desc{
+                    order: 2;
+                    padding-top: 24px;
+                    padding-right: 0;
+                    padding-left: 0;
+                    margin-right: 8.125%;
+                    margin-left: 5%;
+
+                    .desc-title{
+
+                        h2{
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: 0.32px;
+                        }
+                    }
+
+                    p{
+                        font-size: 14px;
+                        margin-top: 18px;
+                    }
+
+                    .beach-button{
+                        margin-top: 24px;
+                        text-align: center;
+
+                        button{
+                            width: 192px;
+                            height: 40px;
+                            font-size: 12px;
+                            letter-spacing: 0.24px;
+                        }
+                    }
+                }
+
+                .beach__images{
+                    width: 100%;
+                    height: fit-content;
+                    order: 1;
+                }
+
+                .owl-dots{
+                    display: none;
+                }
+            }
+        }
+    }
+}

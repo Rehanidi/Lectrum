@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Прожектум: Профайл</title>
+</head>
+<body class="grid__layout"> 
+
+	<aside>
+		<div class="logo__section">
+			<img src="img/logo-white.svg" class="aside--logo" alt="">
+		</div>
+		<div class="user user__section flex">
+			<img src="img/userpic.jpg" class="user__icon" alt="">
+			<div>
+				<p class="user__name">Виктория Сметанникова</p>
+				<p class="user__role">Продакт овнер</p>
+			</div>
+		</div>
+		<div class="user__statistics flex">
+			<div class="tasks tasks--closed">
+				<p class="tasks__number">372</p>
+				<p class="tasks__description">задач выполнено</p>
+			</div>
+			<div class="tasks tasks--open">
+				<p class="tasks__number">11</p>
+				<p class="tasks__description">задач открыто</p>
+			</div>
+		</div>
+		<div class="menu section">
+			<h2 class="section__title">МЕНЮ</h2>
+			<ul class="menu__list">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Мои задачи</a></li>
+				<li class="notification"><a href="#">Уведомления <span class="notification__count">3</span></a></li>
+			</ul>
+		</div>
+		<div class="projects section">
+			<h2 class="section__title">ПРОЕКТЫ</h2>
+			<ul class="projects__list">
+				<li><a href="#"><img src="img/masks/mask1.jpg" class="projects__icon" alt="">Запуск приложения</a></li>
+				<li><a href="#"><img src="img/masks/mask2.jpg" class="projects__icon" alt="">Редизайн сайта</a></li>
+				<li><a href="#"><img src="img/masks/mask3.jpg" class="projects__icon" alt="">Чёрная пятница</a></li>
+				<li><a href="#"><img src="img/masks/mask4.jpg" class="projects__icon" alt="">Проект №07</a></li>
+			</ul>
+			<a href="#" class="projects--create">+ Добавить проект</a>
+		</div>
+		<div class="team section">
+			<h2 class="section__title">КОМАНДЫ</h2>
+			<div class="team__description flex">
+				<p class="team__side">Дизайнеры</p>
+				<div class="team__members flex">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+				</div>
+			</div>
+			<div class="team__description flex">
+				<p class="team__side">Бекенд</p>
+				<div class="team__members flex">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+				</div>
+			</div>
+			<div class="team__description flex">
+				<p class="team__side">Фронтенд</p>
+				<div class="team__members flex">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</aside>
+	<header>
+		<div class="prj prj__info flex">
+			<div class="prj__title__block flex">
+				<h1>Настройки профиля</h1>
+			</div>
+		</div>
+
+		<ul class="tab__navigation">
+			<li class="active"><a href="#">Профиль</a></li>
+		</ul>
+	</header>
+	<main class=" profile__setup">
+		<div class="form form--profile">
+			<form action="" method="">
+				<div class="profile__icon">
+					<img src="img/userpic-big.jpg" alt="">
+
+					<div class="file-input__wrapp">
+						Изменить
+						<input type="file">
+					</div>
+				</div>
+
+				<label for="user">Имя и Фамилия</label>
+				<input type="text" id="user" placeholder="Иван Плотников" class="gap--bottom" value="Виктория Сметанникова">
+
+				<label for="role">Роль в компании</label>
+				<input type="text" id="role" placeholder="Продакт овнер" class="gap--bottom" value="Продакт овнер">
+
+
+				<label for="team">Команды</label>
+				<div class="team__wrapp gap--bottom">
+					<div class="team__name">Бекенд <img src="img/icon/close.svg" class="close__icon" alt=""></div>
+					<div class="team__name">Менеджмент <img src="img/icon/close.svg" class="close__icon" alt=""></div>
+					<input type="text" id="team" class="team__input">
+
+				</div>
+
+
+				<label for="about">О себе</label>
+				<textarea id="about" ></textarea>
+
+
+				<input type="submit" value="Обновить профиль">
+				<input type="submit" class="cancel__btn" value="Отменить">
+
+			</form>
+		</div>
+		
+	</main>
+</body>
+</html>

@@ -1,0 +1,234 @@
+@import "mixins/mixin";
+
+.sight{
+
+    &__container{
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 120px 90px 120px 90px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+
+        .sight__title{
+            text-align: center;
+            margin-bottom: 70px;
+
+            h2{
+                text-align: center;
+                font: normal normal bold 40px/60px Merriweather-Bold;
+                letter-spacing: 0.8px;
+                color: #000000;
+                opacity: 1;
+            }
+        }
+
+        .sight__places{
+            display: grid;
+            grid-template-columns: repeat(2, 46.985%);
+            grid-template-rows: repeat(2, auto);
+            gap: 50px 76px;
+
+            .place-item{
+                display: flex;
+
+                .item-image{
+                    width: 40.5405%;
+
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .item-content{
+                    width: 59.4595%;
+                    padding-top: 22px;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    background: #ECEEEF 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 1px 2px #00000014;
+
+
+                    .item-title{
+                        h2{
+                            text-align: left;
+                            font: normal normal bold 24px/31px Merriweather-Bolt;
+                            letter-spacing: 0.48px;
+                            color: #000000;
+                            opacity: 1;
+                        }
+                    }
+
+                    .item-desc{
+                        margin-top: 20px;
+
+                        p{
+                            text-align: left;
+                            font: normal normal normal 16px/25px Merriweather-Regular;
+                            letter-spacing: 0px;
+                            color: #000000;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sight__button{
+            margin-top: 50px;
+            text-align: center;
+
+            button{
+                @include button;
+                background: #04336D 0% 0% no-repeat padding-box;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .sight{
+
+        &__container{
+            max-width: 924px;
+            padding: 100px 50px 100px 50px;
+
+            .sight__title{
+                margin-bottom: 50px;
+
+                h2{
+                    font-size: 32px;
+                    line-height: 40px;
+                    letter-spacing: 0.64px;
+                }
+            }
+
+            .sight__places{
+                grid-template-columns: repeat(2, 48.052%);
+                gap: 36px;
+
+                .place-item{
+
+                    .item-content{
+                        padding-top: 20px;
+                        padding-right: 16px;
+                        padding-left: 16px;
+
+                        .item-title{
+                            h2{
+                                font-size: 16px;
+                                line-height: 23px;
+                                letter-spacing: 0.36px;
+                            }
+                        }
+
+                        .item-desc{
+                            margin-top: 12px;
+
+                            p{
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sight__button{
+                margin-top: 40px;
+
+                button{
+                    width: 254px;
+                    height: 50px;
+                    font-size: 15px;
+                    line-height: 19px;
+                    letter-spacing: 0.3px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px){
+    .sight{
+
+        &__container{
+            max-width: 680px;
+            padding: 50px 16px 50px 16px;
+
+            .sight__title{
+                margin-bottom: 24px;
+
+                h2{
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 0.36px;
+                }
+            }
+
+            .sight__places{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-auto-rows: minmax(auto, auto);
+                gap: 0;
+
+                .place-item{
+                    display: block;
+
+                    .item-image{
+                        width: 100%;
+                    }
+
+                    .item-content{
+                        width: 100%;
+                        padding: 18px 0 42px;
+                        background: #FFFFFF 0% 0% no-repeat padding-box;
+
+                        .item-title{
+                            h2{
+                                line-height: 20px;
+                                letter-spacing: 0.32px;
+                            }
+                        }
+
+                        .item-desc{
+                            margin-top: 18px;
+
+                            p{
+                                font-size: 14px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+
+                .place-item:first-child{
+                    order: 1;
+                }
+
+                .place-item:nth-child(2){
+                    order: 3;
+                }
+                .place-item:nth-child(3){
+                    order: 2;
+                }
+                .place-item:last-child{
+                    order: 4;
+                }
+            }
+
+            .sight__button{
+                margin-top: 0;
+
+                button{
+                    width: 192px;
+                    height: 40px;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0.24px;
+                }
+            }
+        }
+    }
+}

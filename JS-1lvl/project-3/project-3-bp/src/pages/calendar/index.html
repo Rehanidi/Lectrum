@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Прожектум: Календарь</title>
+</head>
+<body class="grid__layout"> 
+
+	<aside>
+		<div class="logo__section">
+			<img src="img/logo-white.svg" class="aside--logo" alt="">
+		</div>
+		<div class="user user__section flex">
+			<img src="img/userpic.jpg" class="user__icon" alt="">
+			<div>
+				<p class="user__name">Виктория Сметанникова</p>
+				<p class="user__role">Продакт овнер</p>
+			</div>
+		</div>
+		<div class="user__statistics flex">
+			<div class="tasks tasks--closed">
+				<p class="tasks__number">372</p>
+				<p class="tasks__description">задач выполнено</p>
+			</div>
+			<div class="tasks tasks--open">
+				<p class="tasks__number">11</p>
+				<p class="tasks__description">задач открыто</p>
+			</div>
+		</div>
+		<div class="menu section">
+			<h2 class="section__title">МЕНЮ</h2>
+			<ul class="menu__list">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Мои задачи</a></li>
+				<li class="notification"><a href="#">Уведомления <span class="notification__count">3</span></a></li>
+			</ul>
+		</div>
+		<div class="projects section">
+			<h2 class="section__title">ПРОЕКТЫ</h2>
+			<ul class="projects__list">
+				<li><a href="#"><img src="img/masks/mask1.jpg" class="projects__icon" alt="">Запуск приложения</a></li>
+				<li><a href="#"><img src="img/masks/mask2.jpg" class="projects__icon" alt="">Редизайн сайта</a></li>
+				<li><a href="#"><img src="img/masks/mask3.jpg" class="projects__icon" alt="">Чёрная пятница</a></li>
+				<li><a href="#"><img src="img/masks/mask4.jpg" class="projects__icon" alt="">Проект №07</a></li>
+			</ul>
+			<a href="#" class="projects--create">+ Добавить проект</a>
+		</div>
+		<div class="team section">
+			<h2 class="section__title">КОМАНДЫ</h2>
+			<div class="team__description flex">
+				<p class="team__side">Дизайнеры</p>
+				<div class="team__members flex">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+				</div>
+			</div>
+			<div class="team__description flex">
+				<p class="team__side">Бекенд</p>
+				<div class="team__members flex">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+				</div>
+			</div>
+			<div class="team__description flex">
+				<p class="team__side">Фронтенд</p>
+				<div class="team__members flex">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+					<img src="img/people/Oval-1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</aside>
+	<header>
+		<div class="prj prj__info flex">
+			<div class="prj__title__block flex">
+				<img class="prj__icon" src="img/masks/mask-big@2x.jpg" alt="">
+				<h1>Редизайн сайта</h1>
+				
+			</div>
+			<div class="members__block flex">
+				<img src="img/people/Oval-1.jpg" alt="">
+				<img src="img/people/Oval-1.jpg" alt="">
+				<img src="img/people/Oval-1.jpg" alt="">
+			</div>
+		</div>
+
+		<ul class="tab__navigation">
+			<li><a href="#">Задачи</a></li>
+			<li><a href="#">Канбан</a></li>
+			<li class="active"><a href="#">Календарь</a></li>
+		</ul>
+
+		
+	</header>
+	<main class="task__layout calendar__layout flex">
+
+		<div class="calendar__column">
+			<div class="item__header">
+				<h2 class="item__title">Декабрь 2020</h2>
+			</div>
+
+			<div class="calendar__header">
+				<ul>
+					<li>Пн</li>
+					<li>Вт</li>
+					<li>Ср</li>
+					<li>Чт</li>
+					<li>Пт</li>
+					<li>Сб</li>
+					<li>Вс</li>
+				</ul>
+			</div>
+
+			<div class="calendar__bottom">
+				<div class="white"></div>
+				<div>
+					<p class="number">1</p>
+				</div>
+				<div class="yellow">
+					<p class="number">2</p>
+					<p class="tasks">12 задач</p>
+
+				</div>
+				<div>
+					<p class="number">3</p>
+				</div>
+				<div>
+					<p class="number">4</p>
+					<p class="tasks">12 задач</p>
+				</div>
+				<div>
+					<p class="number">5</p>
+				</div>
+				<div>
+					<p class="number">6</p>
+				</div>
+				<div>
+					<p class="number">7</p>
+				</div>
+				<div>
+					<p class="number">8</p>
+				</div>
+				<div>
+					<p class="number">9</p>
+				</div>
+				<div>
+					<p class="number">10</p>
+				</div>
+				<div>
+					<p class="number">11</p>
+				</div>
+				<div>
+					<p class="number">12</p>
+				</div>
+				<div>
+					<p class="number">13</p>
+					<p class="tasks">12 задач</p>
+					
+				</div>
+				<div>
+					<p class="number">14</p>
+				</div>
+				<div>
+					<p class="number">15</p>
+				</div>
+				<div>
+					<p class="tasks">12 задач</p>
+					<p class="number">16</p>
+				</div>
+				<div>
+					<p class="number">17</p>
+				</div>
+				<div>
+					<p class="number">18</p>
+				</div>
+				<div>
+					<p class="number">19</p>
+				</div>
+				<div>
+					<p class="number">20</p>
+				</div>
+				<div>
+					<p class="number">21</p>
+				</div>
+				<div>
+					<p class="number">22</p>
+				</div>
+				<div>
+					<p class="number">23</p>
+				</div>
+				<div>
+					<p class="number">24</p>
+				</div>
+				<div>
+					<p class="number">25</p>
+				</div>
+				<div>
+					<p class="number">26</p>
+				</div>
+				<div>
+					<p class="number">27</p>
+				</div>
+				<div>
+					<p class="number">28</p>
+				</div>
+				<div>
+					<p class="number">29</p>
+				</div>
+				<div>
+					<p class="number">30</p>
+				</div>
+				<div>
+					<p class="number">31</p>
+				</div>
+				<div class="white"></div>
+				<div class="white"></div>
+				<div class="white"></div>
+				<div class="white"></div>
+				<div class="white"></div>
+				<div class="white"></div>
+				<div class="white"></div>
+				<div>
+					<p class="number">1</p>
+				</div>
+				<div class="yellow">
+					<p class="number">2</p>
+					<p class="tasks">12 задач</p>
+
+				</div>
+				<div>
+					<p class="number">3</p>
+				</div>
+				<div>
+					<p class="number">4</p>
+					<p class="tasks">12 задач</p>
+				</div>
+				<div>
+					<p class="number">5</p>
+				</div>
+				<div>
+					<p class="number">6</p>
+				</div>
+				<div>
+					<p class="number">7</p>
+				</div>
+				<div>
+					<p class="number">8</p>
+				</div>
+				<div>
+					<p class="number">9</p>
+				</div>
+				<div>
+					<p class="number">10</p>
+				</div>
+				<div>
+					<p class="number">11</p>
+				</div>
+				<div>
+					<p class="number">12</p>
+				</div>
+				<div>
+					<p class="number">13</p>
+					<p class="tasks">12 задач</p>
+					
+				</div>
+				<div>
+					<p class="number">14</p>
+				</div>
+				<div>
+					<p class="number">15</p>
+				</div>
+				<div>
+					<p class="tasks">12 задач</p>
+					<p class="number">16</p>
+				</div>
+				<div>
+					<p class="number">17</p>
+				</div>
+				<div>
+					<p class="number">18</p>
+				</div>
+				<div>
+					<p class="number">19</p>
+				</div>
+				<div>
+					<p class="number">20</p>
+				</div>
+				<div>
+					<p class="number">21</p>
+				</div>
+				<div>
+					<p class="number">22</p>
+				</div>
+				<div>
+					<p class="number">23</p>
+				</div>
+				<div>
+					<p class="number">24</p>
+				</div>
+				<div>
+					<p class="number">25</p>
+				</div>
+				<div>
+					<p class="number">26</p>
+				</div>
+				<div>
+					<p class="number">27</p>
+				</div>
+				<div>
+					<p class="number">28</p>
+				</div>
+				<div>
+					<p class="number">29</p>
+				</div>
+				<div>
+					<p class="number">30</p>
+				</div>
+				<div>
+					<p class="number">31</p>
+				</div>
+			</div>
+		</div>
+		<div class="tasks__column">
+			<div class="item__header">
+				<h2 class="item__title">ПН, 2 декабря 2020</h2>
+				<a href="#" class="item__btn">+ Добавить задачу</a>
+			</div>
+
+			<a href="#" class="task task__block task--finished">
+				<span class="checkbox">
+					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+					    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+					</svg>
+					<input type="checkbox">
+					
+				</span>
+				<div>
+					<p class="task__description">E-mail after registration so that I can confirm my</p>
+					<div class="flex">
+						<img src="img/userpic.jpg" class="task__executor" alt="">
+						<p class="task__label development">DEVELOPEMENT</p>
+					</div>
+				</div>					
+			</a>
+
+			<a href="#" class="task task__block">
+				<span class="checkbox">
+					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+					    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+					</svg>
+					<input type="checkbox">
+
+				</span>
+				<div>
+					<p class="task__description">E-mail after registration so that I can confirm my</p>
+					<div class="flex">
+						<img src="img/userpic.jpg" class="task__executor" alt="">
+						<p class="task__label development">DEVELOPEMENT</p>
+					</div>
+				</div>					
+			</a>
+
+			<a href="#" class="task task__block">
+				<span class="checkbox">
+					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+					    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+					</svg>
+					<input type="checkbox">
+
+				</span>
+				<div>
+					<p class="task__description">E-mail after registration so that I can confirm my</p>
+					<div class="flex">
+						<img src="img/userpic.jpg" class="task__executor" alt="">
+						<p class="task__label development">DEVELOPEMENT</p>
+					</div>
+				</div>					
+			</a>
+
+			<a href="#" class="task task__block">
+				<span class="checkbox">
+					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+					    <path id="Path" d="M11.561.44a1.5,1.5,0,0,0-2.124,0L4.5,5.379,2.56,3.441A1.5,1.5,0,0,0,.439,5.562l3,3a1.5,1.5,0,0,0,2.121,0l6-6A1.5,1.5,0,0,0,11.561.44Z" fill="#b8b8b8" />
+					</svg>
+					<input type="checkbox">
+
+				</span>
+				<div>
+					<p class="task__description">E-mail after registration so that I can confirm my</p>
+					<div class="flex">
+						<img src="img/userpic.jpg" class="task__executor" alt="">
+						<p class="task__label development">DEVELOPEMENT</p>
+					</div>
+				</div>					
+			</a>
+			
+		</div>
+
+	</main>
+</body>
+</html>
