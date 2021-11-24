@@ -1,0 +1,1 @@
+Used SCSS, Flexbox, CSS Grids, mixins, sprites, GULP, adaptive layout, rubber layout. For pictures used owl-carousel.
