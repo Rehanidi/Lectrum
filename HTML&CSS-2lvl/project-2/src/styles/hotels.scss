@@ -1,0 +1,218 @@
+@import "mixins/mixin";
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.hotels{
+
+    &__container{
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 114px 135px 191px 135px;
+
+        .hotels__title{
+
+            h2{
+                font-family: Ubuntu-Bold, serif;
+                font-size: 26px;
+                line-height: 52px;
+                text-align: center;
+                letter-spacing: 0;
+                color: #273029;
+                margin-bottom: 37px;
+            }
+
+            p{
+                width: 54.444%;
+                font-family: Ubuntu-Regular, serif;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
+                letter-spacing: 0;
+                color: #9E9E9E;
+                margin-right: auto;
+                margin-bottom: 18px;
+                margin-left: auto;
+            }
+
+            .bottom{
+                text-align: center;
+                margin-bottom: 112px;
+
+                button{
+                    @include button;
+                }
+
+                button:hover, button:focus{
+                    @include button-hover;
+                    @include button-focus;
+                }
+            }
+        }
+
+        .choice{
+            display: flex;
+
+            .item{
+                width: 23.077%;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                border: 1px solid #DEDEDE;
+                border-radius: 12px;
+
+                a{
+                    text-decoration: none;
+                }
+
+                img{
+                    width: 100%;
+                    border-radius: 12px;
+                }
+
+                h3{
+                    font-family: Ubuntu-Bold, serif;
+                    font-size: 20px;
+                    line-height: 23px;
+                    text-align: left;
+                    letter-spacing: 0px;
+                    color: #273029;
+                    margin-top: 32px;
+                    margin-left: 30px;
+                }
+
+                p{
+                    font-family: Ubuntu-Regular, serif;
+                    font-size: 16px;
+                    line-height: 18px;
+                    text-align: left;
+                    letter-spacing: 0px;
+                    color: #9E9E9E;
+                    margin-top: 11px;
+                    margin-bottom: 36px;
+                    margin-left: 30px;
+                }
+            }
+
+            .item:hover, .item:focus{
+                background: #85C7D3 0% 0% no-repeat padding-box;
+            }
+
+            .item:nth-child(1),
+            .item:nth-child(2),
+            .item:nth-child(3){
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1024px){
+    .hotels{
+
+        &__container{
+            max-width: 870px;
+            padding: 94px 77px 94px 77px;
+
+            .hotels__title{
+
+                p{
+                    width: 73.218%;
+                }
+
+                .bottom{
+                    margin-bottom: 94px;
+                }
+            }
+
+            .choice{
+
+                .item{
+                    width: 31.044%;
+                }
+
+                .item:nth-child(4){
+                    display: none;
+                }
+
+                .item:nth-child(3){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 680px){
+    .hotels{
+
+        &__container{
+            max-width: 640px;
+            padding: 50px 20px 50px 20px;
+
+            .hotels__title{
+
+                h2{
+                    width: 87.143%;
+                    font-size: 26px;
+                    line-height: 34px;
+                    text-align: left;
+                    margin-bottom: 25px;
+                }
+
+                p{
+                    width: 100%;
+                    text-align: left;
+                    margin-bottom: 40px;
+                }
+
+                .bottom{
+                    margin-bottom: 40px;
+                    text-align: left;
+
+                    button {
+                        width: 180px;
+                        height: 42px;
+                        font-size: 16px;
+                        line-height: 30px;
+                    };
+                }
+            }
+
+            .choice{
+
+                .item{
+                    width: 46.429%;
+
+                    h3{
+                        font-size: 14px;
+                        line-height: 16px;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        line-height: 13px;
+                        margin-top: 6px;
+                        margin-bottom: 10px;
+                        margin-left: 10px;
+                    }
+                }
+
+                .item:nth-child(1){
+                    margin-right: 20px;
+                }
+
+                .item:nth-child(2){
+                    margin-right: 0;
+                }
+
+                .item:nth-child(3){
+                    display: none;
+                }
+            }
+        }
+    }
+}

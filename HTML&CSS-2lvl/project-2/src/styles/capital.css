@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.capital__container {
+  position: relative;
+  max-width: 1305px;
+  margin: 0 auto;
+  background: #F3F9FB 0% 0% no-repeat padding-box;
+  padding-top: 157px;
+  padding-bottom: 361px;
+  padding-left: 135px;
+}
+.capital__container .capital__top {
+  width: 27.126%;
+  margin-right: 46px;
+}
+.capital__container .capital__top h2 {
+  font-family: Ubuntu-Bold, serif;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #273029;
+  margin-top: 120px;
+}
+.capital__container .capital__top p {
+  font-family: Ubuntu-Regular, serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #85C7D3;
+  margin-top: 9px;
+}
+.capital__container .capital__middle {
+  position: absolute;
+  width: 62.847%;
+  top: 157px;
+  left: 37.153%;
+}
+.capital__container .capital__middle img {
+  width: 100%;
+}
+.capital__container .capital__middle .description {
+  position: relative;
+  width: 42.983%;
+  background: #85C7D3 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+  margin-top: -105px;
+  margin-left: 33.48%;
+  padding: 43px 39px 42px 39px;
+}
+.capital__container .capital__middle .description p {
+  font-family: Ubuntu-Regular, serif;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  margin-bottom: 13px;
+}
+.capital__container .capital__middle .description h2 {
+  font-family: Ubuntu-Bold, serif;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+.capital__container .capital__bottom {
+  width: 27.126%;
+  margin-right: 46px;
+}
+.capital__container .capital__bottom p {
+  font-family: Ubuntu-Regular, serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #7B7B7B;
+  margin-top: 30px;
+}
+.capital__container .capital__bottom .capital__button {
+  display: flex;
+  margin-top: 44px;
+}
+.capital__container .capital__bottom .capital__button button {
+  width: 182px;
+  height: 62px;
+  background: #F2994A 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  font-family: Ubuntu-Bold, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  margin-right: 31px;
+}
+.capital__container .capital__bottom .capital__button button:hover, .capital__container .capital__bottom .capital__button button:focus {
+  transition: background 1s ease-in-out;
+  background: transparent;
+  border: 2px solid #F2994A;
+  color: #F2994A;
+  transition: background 1s ease-in-out;
+  background: transparent;
+  border: 2px solid #F2994A;
+  color: #F2994A;
+}
+.capital__container .capital__bottom .capital__button p {
+  font-family: Ubuntu-Bold, serif;
+  font-size: 24px;
+  line-height: 43px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #273029;
+  margin-top: 21px;
+}
+.capital__container .capital__bottom .capital__button p span {
+  font-family: Ubuntu-Regular, serif;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #273029;
+}
+
+@media screen and (max-width: 1024px) {
+  .capital__container {
+    max-width: 944px;
+    padding-top: 94px;
+    padding-bottom: 259px;
+    padding-left: 7.8125%;
+  }
+  .capital__container .capital__top {
+    width: 26.697%;
+    margin-right: 29px;
+  }
+  .capital__container .capital__top h2 {
+    font-size: 26px;
+    line-height: 29px;
+    margin-top: 11px;
+  }
+  .capital__container .capital__top p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 8px;
+  }
+  .capital__container .capital__middle {
+    width: 64.453%;
+    top: 94px;
+    left: 35.546%;
+  }
+  .capital__container .capital__middle .description {
+    width: 58.94%;
+    margin-top: -55px;
+    margin-left: 17.121%;
+  }
+  .capital__container .capital__bottom {
+    width: 26.697%;
+    margin-right: 29px;
+  }
+  .capital__container .capital__bottom p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 24px;
+  }
+  .capital__container .capital__bottom .capital__button {
+    position: relative;
+    display: grid;
+    margin-top: 24px;
+  }
+  .capital__container .capital__bottom .capital__button button {
+    margin-top: 27px;
+    margin-right: 0;
+    order: 2;
+  }
+  .capital__container .capital__bottom .capital__button p {
+    font-size: 23px;
+    line-height: 25px;
+    margin-top: 0;
+    order: 1;
+  }
+  .capital__container .capital__bottom .capital__button p span {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .capital__container {
+    max-width: 680px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0;
+  }
+  .capital__container .capital__top {
+    width: 100%;
+    margin-right: 0;
+  }
+  .capital__container .capital__top h2 {
+    font-size: 26px;
+    line-height: 29px;
+    margin-top: 0;
+  }
+  .capital__container .capital__top p {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 8px;
+  }
+  .capital__container .capital__middle {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 25px;
+  }
+  .capital__container .capital__middle .description {
+    display: none;
+  }
+  .capital__container .capital__bottom {
+    width: auto;
+    margin-right: 0;
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+  .capital__container .capital__bottom p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 25px;
+  }
+  .capital__container .capital__bottom .capital__button button {
+    width: 180px;
+    height: 42px;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .capital__container .capital__bottom .capital__button p {
+    font-size: 23px;
+    line-height: 41px;
+    margin-top: 0;
+  }
+  .capital__container .capital__bottom .capital__button p span {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
+
+/*# sourceMappingURL=capital.css.map */

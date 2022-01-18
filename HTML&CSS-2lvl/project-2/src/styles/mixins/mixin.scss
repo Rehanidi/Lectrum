@@ -1,0 +1,28 @@
+@mixin button{
+    width: 182px;
+    height: 62px;
+    background: #F2994A 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    font-family: Ubuntu-Bold, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}
+
+@mixin button-hover{
+    transition: background 1s ease-in-out;
+    background: transparent;
+    border: 2px solid #F2994A;
+    color: #F2994A;
+}
+
+@mixin button-focus{
+    transition: background 1s ease-in-out;
+    background: transparent;
+    border: 2px solid #F2994A;
+    color: #F2994A;
+}

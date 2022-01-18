@@ -1,0 +1,453 @@
+@import "mixins/mixin";
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.header{
+
+    &__container{
+        position: relative;
+        max-width: 1440px;
+        margin: 0 auto;
+        background: url("..//images/jpg/main-background.jpg");
+        background-size: cover;
+        padding-bottom: 329px;
+
+        .header__menu-short{
+            display: none;
+            position: absolute;
+        }
+
+        .header__top{
+            display: flex;
+            width: 81.319%;
+            height: auto;
+            padding-top: 51px;
+            margin: 0 auto;
+
+            .header__title{
+                text-align: left;
+                font-size: 30px;
+                font-family: Ubuntu-Bold, serif;
+                letter-spacing: 0;
+                line-height: 43px;
+                color: #FFFFFF;
+                opacity: 1;
+                margin-top: 10px;
+            }
+
+            .header__menu{
+                margin-top: 20px;
+                margin-left: auto;
+
+                &-list{
+                    display: flex;
+
+                    li{
+                        list-style-type: none;
+                        margin-right: 60px;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        text-align: left;
+                        font-family: Ubuntu-Regular, serif;
+                        font-size: 16px;
+                        line-height: 30px;
+                        letter-spacing: 0;
+                        color: #FFFFFF;
+                        opacity: 1;
+                        white-space: nowrap;
+                    }
+
+                    a:hover, a:focus{
+                        text-decoration: underline #F2994A;
+                    }
+                }
+            }
+
+            .header__btn{
+                width: 124px;
+                height: 58px;
+                text-decoration: none;
+                border-radius: 8px;
+                opacity: 1;
+                background: transparent;
+                text-align: center;
+                font: normal normal normal 18px/68px Ubuntu-Medium, serif;
+                color: #FFFFFF;
+            }
+
+            .header__btn:hover, .header__btn:focus{
+                border: 1px solid #FFFFFF;
+            }
+        }
+
+        .form{
+            position: relative;
+            width: 400px;
+            height: auto;
+            margin-top: 157px;
+            margin-left: 10.227%;
+            padding: 38px 43px 31.5px 44px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border-radius: 20px;
+            opacity: 1;
+            z-index: 2;
+
+            .point{
+                svg{
+                    position: absolute;
+                    top: 91px;
+                    right: 14.11%;
+                    width: 18px;
+                    height: 21.73px;
+                }
+            }
+
+            label{
+                display: block;
+                margin-bottom: 13px;
+                font-family: Ubuntu-Bold, serif;
+                font-size: 16px;
+                line-height: 18px;
+            }
+
+            input{
+                width: 93.75%;
+                height: 64px;
+                background: #F5F5F5 0% 0% no-repeat padding-box;
+                border-radius: 12px;
+                opacity: 1;
+                padding-left: 25px;
+            }
+
+            select{
+                position: relative;
+                width: 100%;
+                height: 64px;
+                background: #F5F5F5 0% 0% no-repeat padding-box;
+                border-radius: 12px;
+                opacity: 1;
+                color: gray;
+                padding-left: 25px;
+                appearance:none;
+
+                option[value=""][disabled] {
+                    display: none;
+                    color: #999;
+                }
+                option::-webkit-calendar-picker-indicator {
+                  color: red;
+                }
+            }
+
+            .select-arrow{
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                top: 331px;
+                right: 13.55%;
+            }
+
+            .calendar{
+                position: relative;
+                display: flex;
+                margin-top: 26px;
+                margin-bottom: 26px;
+
+                .in svg{
+                    position: absolute;
+                    top: 52px;
+                    right: 240px;
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .out svg{
+                    position: absolute;
+                    top: 52px;
+                    right: 25px;
+                    width: 20px;
+                    height: 20px;
+                }
+
+                input::-webkit-calendar-picker-indicator {
+                  display: none;
+                }
+
+                input{
+                    width: 160px;
+                }
+
+                .out{
+                    margin-left: auto;
+                }
+            }
+
+            .header__checkbox{
+                display: flex;
+                margin-top: 24px;
+
+                input{
+                    width: 24px;
+                    height: 24px;
+                    background: #85C7D3 0% 0% no-repeat padding-box;
+                    border-radius: 4px;
+                    margin-right: 19.07px;
+                }
+
+                input:checked{
+                    border: 2px solid #FFFFFF;
+                }
+
+                label{
+                    margin-bottom: 0;
+                    height: auto;
+                    font-family: Ubuntu-Regular, serif;
+                    line-height: 24px;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
+
+            .header__button{
+                margin-top: 33.87px;
+
+                button{
+                    @include button;
+                    width: 100%;
+                    height: 72px;
+                }
+
+                button:hover, button:focus{
+                    @include button-hover;
+                    @include button-focus;
+                }
+            }
+        }
+
+        .icon-1{
+            position: absolute;
+            width: 89px;
+            height: 91px;
+            transform: matrix(0.94, -0.34, 0.34, 0.94, 0, 0);
+            top: 304.37px;
+            right: 42.62%;
+            z-index: 1;
+        }
+
+        .icon-2{
+            position: absolute;
+            width: 97px;
+            height: 96px;
+            top: 740px;
+            right: 7.5%;
+        }
+
+        .comment-1{
+            position: absolute;
+            width: 223px;
+            height: 150px;
+            top: 365px;
+            left: 68.75%;
+        }
+
+        .comment-2{
+            position: absolute;
+            top: 654.85px;
+            right: 23%;
+        }
+    }
+}
+
+@media screen and(max-width: 1024px){
+    .header{
+
+        &__container{
+            padding-bottom: 85px;
+
+            .header__top{
+                width: 94.44%;
+
+                .header__title{
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-top: 10px;
+                }
+
+                .header__menu{
+
+                    &-list{
+
+                        a{
+                            font-size: 10px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+
+            .form{
+                margin-top: 60px;
+                margin-left: 8.55%;
+            }
+
+            .icon-1{
+                display: none;
+            }
+
+            .icon-2{
+                top: 598px;
+                right: 2.244%;
+            }
+
+            .comment-1{
+                width: 223px;
+                height: 151px;
+                top: 226px;
+                left: 67.38%;
+            }
+
+            .comment-2{
+                width: 218px;
+                height: 154px;
+                top: 540.85px;
+                left: 64.32%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 768px){
+    .header{
+
+        &__container{
+            max-width: 768px;
+            padding-bottom: 0;
+
+            .header__menu-short{
+                display: block;
+                top: 16px;
+                left: 16px;
+
+                svg{
+                    width: 23px;
+                    height: 18px;
+                    margin-top: 1px;
+                }
+            }
+
+            .header__top{
+                width: 100%;
+                padding-top: 0;
+
+                .header__title{
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+
+                .header__menu{
+                    display: none;
+                }
+
+                .header__btn{
+                    display: none;
+                }
+            }
+
+            .form{
+                width: auto;
+                padding: 40px 20px 50px;
+                margin-left: 0;
+                margin-top: 24px;
+                border-radius: 20px 20px 0 0;
+
+                .point{
+                    width: 100%;
+
+                    svg{
+                        top: 91px;
+                        right: 10%;
+                        width: 18px;
+                        height: 21.73px;
+                    }
+                }
+
+                label{
+                    margin-bottom: 10px;
+                    line-height: 30px;
+                }
+
+                input{
+                    padding-left: 16px;
+                }
+
+                select{
+                    height: 60px;
+                }
+
+                .select-arrow{
+                    top: 462px;
+                    right: 10%;
+                }
+
+                .calendar{
+                    display: block;
+                    margin-top: 30px;
+
+                    .in svg{
+                        top: 60px;
+                        right: 5.714%;
+                    }
+
+                    .out svg{
+                        top: 160px;
+                        right: 5.714%;
+                    }
+
+                    input{
+                        width: 93.75%;
+                        height: 60px;
+                    }
+                }
+
+                .header__checkbox{
+
+                    input{
+                        margin-right: 12px;
+                    }
+
+                    label{
+                        line-height: 30px;
+                    }
+                }
+
+                .header__button{
+                    margin-top: 30px;
+
+                    button{
+                        height: 46px;
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+            }
+
+            .icon-2{
+                display: none;
+            }
+
+            .comment-1{
+                display: none;
+            }
+
+            .comment-2{
+                display: none;
+            }
+        }
+    }
+}

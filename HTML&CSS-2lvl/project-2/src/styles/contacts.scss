@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.contacts{
+
+    a{
+        text-decoration: none;
+    }
+
+    &__container{
+        max-width: 1170px;
+        margin: 0 auto;
+        background: #F3F9FB 0% 0% no-repeat padding-box;
+        opacity: 1;
+        padding: 0 135px 70px 135px;
+
+        .footer__top{
+            position: relative;
+            min-width: 780px;
+            display: flex;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border-radius: 20px;
+            opacity: 1;
+            padding: 80px 56px 88px 80px;
+            margin-top: -148px;
+            margin-bottom: 53px;
+
+            .about{
+                width: 45.455%;
+                margin-right: 14.41%;
+
+                h2{
+                    font-family: Ubuntu-Bold, serif;
+                    font-size: 24px;
+                    line-height: 35px;
+                    text-align: left;
+                    letter-spacing: 0.6px;
+                    color: #273029;
+                    opacity: 1;
+                    margin-bottom: 30px;
+                }
+
+                p{
+                    font-family: Ubuntu-Regular, serif;
+                    font-size: 20px;
+                    line-height: 35px;
+                    text-align: left;
+                    letter-spacing: 0px;
+                    color: #9E9E9E;
+                    opacity: 1;
+                }
+            }
+
+            .navigation{
+                width: 15.378%;
+                margin-right: 5.61%;
+
+                h2{
+                    font-family: Ubuntu-Bold, serif;
+                    font-size: 20px;
+                    line-height: 35px;
+                    text-align: left;
+                    letter-spacing: 0px;
+                    color: #273029;
+                    opacity: 1;
+                    margin-bottom: 36px;
+                }
+
+                ul{
+                    li{
+                        list-style-type: none;
+                        font-family: Ubuntu-Regular, serif;
+                        font-size: 20px;
+                        line-height: 35px;
+                        text-align: left;
+                        letter-spacing: 0px;
+                        opacity: 1;
+                        white-space: nowrap;
+
+                        a{
+                            color: #9E9E9E;
+                        }
+                    }
+
+                    li:not(:last-child){
+                        margin-bottom: 24px;
+                    }
+                }
+
+                a:hover, a:focus{
+                    color: #F2994A;
+                }
+            }
+
+            .connect{
+                width: 19.149%;
+
+                h2{
+                    font-family: Ubuntu-Bold, serif;
+                    font-size: 20px;
+                    line-height: 35px;
+                    text-align: left;
+                    letter-spacing: 0px;
+                    color: #273029;
+                    opacity: 1;
+                    margin-bottom: 36px;
+                    white-space: nowrap;
+                }
+
+                .phone{
+                    margin-bottom: 24px;
+
+                    a{
+                        font-family: Ubuntu-Regular, serif;
+                        font-size: 20px;
+                        line-height: 35px;
+                        text-align: left;
+                        letter-spacing: 0px;
+                        color: #9E9E9E;
+                        opacity: 1;
+                    }
+                }
+
+                .mailto{
+                    margin-bottom: 24px;
+
+                    a{
+                        font-family: Ubuntu-Regular, serif;
+                        font-size: 20px;
+                        line-height: 35px;
+                        text-align: left;
+                        letter-spacing: 0px;
+                        color: #9E9E9E;
+                        opacity: 1;
+                    }
+                }
+
+                .mail{
+                    a{
+                        font-family: Ubuntu-Regular, serif;
+                        font-size: 20px;
+                        line-height: 35px;
+                        text-align: left;
+                        letter-spacing: 0px;
+                        color: #9E9E9E;
+                        opacity: 1;
+                    }
+                }
+
+                a:hover, a:focus{
+                    color: #F2994A;
+                }
+            }
+        }
+
+        .footer__bottom{
+            display: flex;
+
+            .all__rights{
+
+                h2{
+                    font-family: Ubuntu-Regular, serif;
+                    font-size: 18px;
+                    line-height: 35px;
+                    font-weight: normal;
+                }
+            }
+
+            .footer__social{
+                width: auto;
+                margin-left: auto;
+
+                svg{
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .facebook{
+                    margin-right: 31.5px;
+                    margin-left: 31.5px;
+                }
+
+                svg:hover, svg:focus{
+                    fill: #F2994A;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1024px){
+   .contacts{
+
+        &__container{
+            max-width: 864px;
+            padding: 0 80px 94px 80px;
+
+            .footer__top{
+                min-width: 0;
+                padding: 60px 60px 147px 60px;
+                margin-top: -52px;
+                margin-bottom: 28px;
+
+                .about{
+                    width: 60.256%;
+                    margin-right: 9.744%;
+
+                    h2{
+                        font-size: 20px;
+                    }
+                }
+
+                .navigation{
+                    display: none;
+                }
+
+                .connect{
+                    width: 25.385%;
+
+                    .phone{
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 680px){
+    .contacts{
+
+        &__container{
+            max-width: 680px;
+            padding: 0;
+
+            .footer__top{
+                display: none;
+            }
+
+            .footer__bottom{
+                display: grid;
+
+                .all__rights{
+                    order: 2;
+                    margin-right: auto;
+                    margin-bottom: 30px;
+                    margin-left: auto;
+
+                    h2{
+                        font-size: 12px;
+                    }
+                }
+
+                .footer__social{
+                    order: 1;
+                    margin: 30px auto;
+
+                    svg{
+                        width: 34px;
+                        height: 34px;
+                    }
+
+                    .facebook{
+                        margin-right: 28.5px;
+                        margin-left: 28.5px;
+                    }
+                }
+            }
+        }
+    }
+}

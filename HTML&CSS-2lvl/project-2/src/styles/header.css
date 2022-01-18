@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.header__container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url("..//images/jpg/main-background.jpg");
+  background-size: cover;
+  padding-bottom: 329px;
+}
+.header__container .header__menu-short {
+  display: none;
+  position: absolute;
+}
+.header__container .header__top {
+  display: flex;
+  width: 81.319%;
+  height: auto;
+  padding-top: 51px;
+  margin: 0 auto;
+}
+.header__container .header__top .header__title {
+  text-align: left;
+  font-size: 30px;
+  font-family: Ubuntu-Bold, serif;
+  letter-spacing: 0;
+  line-height: 43px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-top: 10px;
+}
+.header__container .header__top .header__menu {
+  margin-top: 20px;
+  margin-left: auto;
+}
+.header__container .header__top .header__menu-list {
+  display: flex;
+}
+.header__container .header__top .header__menu-list li {
+  list-style-type: none;
+  margin-right: 60px;
+}
+.header__container .header__top .header__menu-list a {
+  text-decoration: none;
+  text-align: left;
+  font-family: Ubuntu-Regular, serif;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  opacity: 1;
+  white-space: nowrap;
+}
+.header__container .header__top .header__menu-list a:hover, .header__container .header__top .header__menu-list a:focus {
+  text-decoration: underline #F2994A;
+}
+.header__container .header__top .header__btn {
+  width: 124px;
+  height: 58px;
+  text-decoration: none;
+  border-radius: 8px;
+  opacity: 1;
+  background: transparent;
+  text-align: center;
+  font: normal normal normal 18px/68px Ubuntu-Medium, serif;
+  color: #FFFFFF;
+}
+.header__container .header__top .header__btn:hover, .header__container .header__top .header__btn:focus {
+  border: 1px solid #FFFFFF;
+}
+.header__container .form {
+  position: relative;
+  width: 400px;
+  height: auto;
+  margin-top: 157px;
+  margin-left: 10.227%;
+  padding: 38px 43px 31.5px 44px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  opacity: 1;
+  z-index: 2;
+}
+.header__container .form .point svg {
+  position: absolute;
+  top: 91px;
+  right: 14.11%;
+  width: 18px;
+  height: 21.73px;
+}
+.header__container .form label {
+  display: block;
+  margin-bottom: 13px;
+  font-family: Ubuntu-Bold, serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+.header__container .form input {
+  width: 93.75%;
+  height: 64px;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+  padding-left: 25px;
+}
+.header__container .form select {
+  position: relative;
+  width: 100%;
+  height: 64px;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+  color: gray;
+  padding-left: 25px;
+  appearance: none;
+}
+.header__container .form select option[value=""][disabled] {
+  display: none;
+  color: #999;
+}
+.header__container .form select option::-webkit-calendar-picker-indicator {
+  color: red;
+}
+.header__container .form .select-arrow {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 331px;
+  right: 13.55%;
+}
+.header__container .form .calendar {
+  position: relative;
+  display: flex;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+.header__container .form .calendar .in svg {
+  position: absolute;
+  top: 52px;
+  right: 240px;
+  width: 20px;
+  height: 20px;
+}
+.header__container .form .calendar .out svg {
+  position: absolute;
+  top: 52px;
+  right: 25px;
+  width: 20px;
+  height: 20px;
+}
+.header__container .form .calendar input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.header__container .form .calendar input {
+  width: 160px;
+}
+.header__container .form .calendar .out {
+  margin-left: auto;
+}
+.header__container .form .header__checkbox {
+  display: flex;
+  margin-top: 24px;
+}
+.header__container .form .header__checkbox input {
+  width: 24px;
+  height: 24px;
+  background: #85C7D3 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  margin-right: 19.07px;
+}
+.header__container .form .header__checkbox input:checked {
+  border: 2px solid #FFFFFF;
+}
+.header__container .form .header__checkbox label {
+  margin-bottom: 0;
+  height: auto;
+  font-family: Ubuntu-Regular, serif;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.header__container .form .header__button {
+  margin-top: 33.87px;
+}
+.header__container .form .header__button button {
+  width: 182px;
+  height: 62px;
+  background: #F2994A 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  font-family: Ubuntu-Bold, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  width: 100%;
+  height: 72px;
+}
+.header__container .form .header__button button:hover, .header__container .form .header__button button:focus {
+  transition: background 1s ease-in-out;
+  background: transparent;
+  border: 2px solid #F2994A;
+  color: #F2994A;
+  transition: background 1s ease-in-out;
+  background: transparent;
+  border: 2px solid #F2994A;
+  color: #F2994A;
+}
+.header__container .icon-1 {
+  position: absolute;
+  width: 89px;
+  height: 91px;
+  transform: matrix(0.94, -0.34, 0.34, 0.94, 0, 0);
+  top: 304.37px;
+  right: 42.62%;
+  z-index: 1;
+}
+.header__container .icon-2 {
+  position: absolute;
+  width: 97px;
+  height: 96px;
+  top: 740px;
+  right: 7.5%;
+}
+.header__container .comment-1 {
+  position: absolute;
+  width: 223px;
+  height: 150px;
+  top: 365px;
+  left: 68.75%;
+}
+.header__container .comment-2 {
+  position: absolute;
+  top: 654.85px;
+  right: 23%;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__container {
+    padding-bottom: 85px;
+  }
+  .header__container .header__top {
+    width: 94.44%;
+  }
+  .header__container .header__top .header__title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 10px;
+  }
+  .header__container .header__top .header__menu-list a {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .header__container .form {
+    margin-top: 60px;
+    margin-left: 8.55%;
+  }
+  .header__container .icon-1 {
+    display: none;
+  }
+  .header__container .icon-2 {
+    top: 598px;
+    right: 2.244%;
+  }
+  .header__container .comment-1 {
+    width: 223px;
+    height: 151px;
+    top: 226px;
+    left: 67.38%;
+  }
+  .header__container .comment-2 {
+    width: 218px;
+    height: 154px;
+    top: 540.85px;
+    left: 64.32%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__container {
+    max-width: 768px;
+    padding-bottom: 0;
+  }
+  .header__container .header__menu-short {
+    display: block;
+    top: 16px;
+    left: 16px;
+  }
+  .header__container .header__menu-short svg {
+    width: 23px;
+    height: 18px;
+    margin-top: 1px;
+  }
+  .header__container .header__top {
+    width: 100%;
+    padding-top: 0;
+  }
+  .header__container .header__top .header__title {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .header__container .header__top .header__menu {
+    display: none;
+  }
+  .header__container .header__top .header__btn {
+    display: none;
+  }
+  .header__container .form {
+    width: auto;
+    padding: 40px 20px 50px;
+    margin-left: 0;
+    margin-top: 24px;
+    border-radius: 20px 20px 0 0;
+  }
+  .header__container .form .point {
+    width: 100%;
+  }
+  .header__container .form .point svg {
+    top: 91px;
+    right: 10%;
+    width: 18px;
+    height: 21.73px;
+  }
+  .header__container .form label {
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+  .header__container .form input {
+    padding-left: 16px;
+  }
+  .header__container .form select {
+    height: 60px;
+  }
+  .header__container .form .select-arrow {
+    top: 462px;
+    right: 10%;
+  }
+  .header__container .form .calendar {
+    display: block;
+    margin-top: 30px;
+  }
+  .header__container .form .calendar .in svg {
+    top: 60px;
+    right: 5.714%;
+  }
+  .header__container .form .calendar .out svg {
+    top: 160px;
+    right: 5.714%;
+  }
+  .header__container .form .calendar input {
+    width: 93.75%;
+    height: 60px;
+  }
+  .header__container .form .header__checkbox input {
+    margin-right: 12px;
+  }
+  .header__container .form .header__checkbox label {
+    line-height: 30px;
+  }
+  .header__container .form .header__button {
+    margin-top: 30px;
+  }
+  .header__container .form .header__button button {
+    height: 46px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .header__container .icon-2 {
+    display: none;
+  }
+  .header__container .comment-1 {
+    display: none;
+  }
+  .header__container .comment-2 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

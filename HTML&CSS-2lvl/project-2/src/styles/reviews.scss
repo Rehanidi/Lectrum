@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.reviews{
+
+    &__container{
+        position: relative;
+        display: flex;
+        max-width: 1170px;
+        margin: 0 auto;
+        background: #85C7D3 0% 0% no-repeat padding-box;
+        padding: 146px 135px 243px 135px;
+
+        .owl-carousel{
+
+            .owl-nav{
+                float: right;
+
+                .owl-prev{
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.2) 0% 0% no-repeat padding-box !important;
+                    //background-image: url("../images/svg/arrow-icon-white.svg") !important;
+                    //background-repeat: no-repeat;
+                    width: 48px;
+                    height: 48px;;
+                    transform: rotate(180deg);
+                }
+
+                .owl-next{
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.2) 0% 0% no-repeat padding-box !important;
+                    width: 48px;
+                    height: 48px;
+                    margin-left: 12px;
+                }
+
+                .owl-prev:hover, .owl-prev:focus,
+                .owl-next:hover, .owl-next:focus{
+                    background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box !important;
+                }
+
+                svg{
+                    margin-top: 3px;
+                }
+
+                .owl-prev:hover path, .owl-prev:focus path,
+                .owl-next:hover path, .owl-next:focus path{
+                    fill: #f2994a;
+                }
+            }
+        }
+
+        .reviews__items{
+
+            .item{
+
+                .review__block{
+                    display: flex;
+                    margin-bottom: 40px;
+
+                    .review__image{
+                        width: 40.171%;
+                        margin-right: 11.111%;
+
+                        img{
+                            width: 100%;
+                            border-radius: 12px;
+                        }
+                    }
+
+                    .review__text{
+                        width: 40.513%;
+                        background: rgba(255, 255, 255, 0.2);
+                        border-radius: 12px;
+                        padding: 51px 48px 47px;
+
+                        p{
+                            font-family: Ubuntu-Regular, serif;
+                            font-size: 20px;
+                            line-height: 35px;
+                            text-align: left;
+                            letter-spacing: 0;
+                            color: #FFFFFF;
+                            opacity: 1;
+                            margin-bottom: 32px;
+                        }
+
+                        .text-rating{
+                            display:flex;
+                        }
+
+                        svg:not(:last-child){
+                            margin-right: 8.98px;
+                        }
+                    }
+                }
+
+                .review-author{
+                    margin-left: 51.28%;
+
+                    h2{
+                        font-family: Ubuntu-Bold, serif;
+                        font-size: 24px;
+                        line-height: 43px;
+                        text-align: left;
+                        letter-spacing: 0;
+                        color: rgba(255, 255, 255, 1);
+                        margin-bottom: 13px;
+                    }
+
+                    p{
+                        font-family: Ubuntu-Regular, serif;
+                        font-size: 16px;
+                        line-height: 30px;
+                        text-align: left;
+                        letter-spacing: 0;
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1024px){
+    .reviews{
+
+        &__container{
+            max-width: 864px;
+            padding: 140px 80px 163px;
+
+            .owl-carousel{
+
+                .owl-nav{
+                    margin-top: -48px;
+                }
+            }
+
+            .reviews__items{
+
+                .item{
+
+                    .review__block{
+
+                        .review__image{
+                            width: 28.24%;
+                            margin-right: 5.79%;
+                        }
+
+                        .review__text{
+                            width: 54.861%;
+                        }
+                    }
+
+                    .review-author{
+                        margin-left: 34.028%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .reviews{
+
+        &__container{
+            max-width: 635px;
+            padding: 50px 28px 50px 20px;
+
+            .owl-carousel{
+
+                .owl-nav{
+                    display: none;
+                }
+            }
+
+            .reviews__items{
+
+                .item{
+
+                    .review__block{
+                        margin-bottom: 0;
+
+                        .review__image{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 44.118%;
+                            margin-right: 0;
+                        }
+
+                        .review__text{
+                            width: 100%;
+                            background: rgba(255, 255, 255, 0);
+                            padding: 51.475% 0 0;
+
+                            p{
+                                font-size: 13px;
+                                line-height: 24px;
+                                margin-bottom: 0;
+                            }
+
+                            .text-rating{
+                                position: absolute;
+                                top: 19.058%;
+                                left: 51.471%;
+                            }
+                        }
+                    }
+
+                    .review-author{
+                        position: absolute;
+                        top: 0;
+                        left: 51.471%;
+                        display: grid;
+                        margin-left: 0;
+
+                        h2{
+                            font-family: Ubuntu-Regular, serif;
+                            font-size: 14px;
+                            line-height: 16px;
+                            font-style: normal;
+                            font-weight: normal;
+                            margin-bottom: 0;
+                            order: 2;
+                        }
+
+                        p{
+                            font-family: Ubuntu-Bold, serif;
+                            font-size: 22px;
+                            line-height: 25px;
+                            margin-bottom: 10px;
+                            order: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

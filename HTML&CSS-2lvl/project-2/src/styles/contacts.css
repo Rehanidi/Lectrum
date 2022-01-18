@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.contacts a {
+  text-decoration: none;
+}
+.contacts__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  background: #F3F9FB 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding: 0 135px 70px 135px;
+}
+.contacts__container .footer__top {
+  position: relative;
+  min-width: 780px;
+  display: flex;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  opacity: 1;
+  padding: 80px 56px 88px 80px;
+  margin-top: -148px;
+  margin-bottom: 53px;
+}
+.contacts__container .footer__top .about {
+  width: 45.455%;
+  margin-right: 14.41%;
+}
+.contacts__container .footer__top .about h2 {
+  font-family: Ubuntu-Bold, serif;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: left;
+  letter-spacing: 0.6px;
+  color: #273029;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+.contacts__container .footer__top .about p {
+  font-family: Ubuntu-Regular, serif;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #9E9E9E;
+  opacity: 1;
+}
+.contacts__container .footer__top .navigation {
+  width: 15.378%;
+  margin-right: 5.61%;
+}
+.contacts__container .footer__top .navigation h2 {
+  font-family: Ubuntu-Bold, serif;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #273029;
+  opacity: 1;
+  margin-bottom: 36px;
+}
+.contacts__container .footer__top .navigation ul li {
+  list-style-type: none;
+  font-family: Ubuntu-Regular, serif;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: left;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+.contacts__container .footer__top .navigation ul li a {
+  color: #9E9E9E;
+}
+.contacts__container .footer__top .navigation ul li:not(:last-child) {
+  margin-bottom: 24px;
+}
+.contacts__container .footer__top .navigation a:hover, .contacts__container .footer__top .navigation a:focus {
+  color: #F2994A;
+}
+.contacts__container .footer__top .connect {
+  width: 19.149%;
+}
+.contacts__container .footer__top .connect h2 {
+  font-family: Ubuntu-Bold, serif;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #273029;
+  opacity: 1;
+  margin-bottom: 36px;
+  white-space: nowrap;
+}
+.contacts__container .footer__top .connect .phone {
+  margin-bottom: 24px;
+}
+.contacts__container .footer__top .connect .phone a {
+  font-family: Ubuntu-Regular, serif;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #9E9E9E;
+  opacity: 1;
+}
+.contacts__container .footer__top .connect .mailto {
+  margin-bottom: 24px;
+}
+.contacts__container .footer__top .connect .mailto a {
+  font-family: Ubuntu-Regular, serif;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #9E9E9E;
+  opacity: 1;
+}
+.contacts__container .footer__top .connect .mail a {
+  font-family: Ubuntu-Regular, serif;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #9E9E9E;
+  opacity: 1;
+}
+.contacts__container .footer__top .connect a:hover, .contacts__container .footer__top .connect a:focus {
+  color: #F2994A;
+}
+.contacts__container .footer__bottom {
+  display: flex;
+}
+.contacts__container .footer__bottom .all__rights h2 {
+  font-family: Ubuntu-Regular, serif;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: normal;
+}
+.contacts__container .footer__bottom .footer__social {
+  width: auto;
+  margin-left: auto;
+}
+.contacts__container .footer__bottom .footer__social svg {
+  width: 30px;
+  height: 30px;
+}
+.contacts__container .footer__bottom .footer__social .facebook {
+  margin-right: 31.5px;
+  margin-left: 31.5px;
+}
+.contacts__container .footer__bottom .footer__social svg:hover, .contacts__container .footer__bottom .footer__social svg:focus {
+  fill: #F2994A;
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts__container {
+    max-width: 864px;
+    padding: 0 80px 94px 80px;
+  }
+  .contacts__container .footer__top {
+    min-width: 0;
+    padding: 60px 60px 147px 60px;
+    margin-top: -52px;
+    margin-bottom: 28px;
+  }
+  .contacts__container .footer__top .about {
+    width: 60.256%;
+    margin-right: 9.744%;
+  }
+  .contacts__container .footer__top .about h2 {
+    font-size: 20px;
+  }
+  .contacts__container .footer__top .navigation {
+    display: none;
+  }
+  .contacts__container .footer__top .connect {
+    width: 25.385%;
+  }
+  .contacts__container .footer__top .connect .phone {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 680px) {
+  .contacts__container {
+    max-width: 680px;
+    padding: 0;
+  }
+  .contacts__container .footer__top {
+    display: none;
+  }
+  .contacts__container .footer__bottom {
+    display: grid;
+  }
+  .contacts__container .footer__bottom .all__rights {
+    order: 2;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+  }
+  .contacts__container .footer__bottom .all__rights h2 {
+    font-size: 12px;
+  }
+  .contacts__container .footer__bottom .footer__social {
+    order: 1;
+    margin: 30px auto;
+  }
+  .contacts__container .footer__bottom .footer__social svg {
+    width: 34px;
+    height: 34px;
+  }
+  .contacts__container .footer__bottom .footer__social .facebook {
+    margin-right: 28.5px;
+    margin-left: 28.5px;
+  }
+}
+
+/*# sourceMappingURL=contacts.css.map */

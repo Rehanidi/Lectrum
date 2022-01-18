@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Гостишка</title>
+        <link href="styles/styles.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+        <link rel="stylesheet" href="./library/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+        <link rel="stylesheet" href="./library/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    </head>
+    <body>
+        <header class="header">
+			<div class="header__container">
+                <div class="header__menu-short">
+                    <svg>
+                        <use xlink:href="./images/sprites/sprite.svg#menu-icon"></use>
+                    </svg>
+                </div>
+                <div class="header__top">
+                    <h2 class="header__title">Гостишка</h2>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="menu__item"><a href="#">Главная</a></li>
+                            <li class="menu__item"><a href="#capital">Найти гостиницу</a></li>
+                            <li class="menu__item"><a href="#about">О нас</a></li>
+                            <li class="menu__item"><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="header__btn">Логин</a>
+                </div>
+                <form class="form">
+                    <div class="point">
+                        <label for="point">Куда едем?</label>
+                        <input type="text" id="point" placeholder="Может быть в Лондон?">
+                        <svg>
+                            <use xlink:href="./images/sprites/sprite.svg#map-pin-icon"></use>
+                        </svg>
+                    </div>
+                    <div class="calendar">
+                        <div class="in">
+                            <label for="in">Заезд</label>
+                            <input type="text" id="in" placeholder="23 декабря">
+                            <svg>
+                                <use xlink:href="./images/sprites/sprite.svg#calendar-icon"></use>
+                            </svg>
+                        </div>
+                        <div class="out">
+                            <label for="out">Отъезд</label>
+                            <input type="text" id="out" placeholder="23 декабря">
+                            <svg>
+                                <use xlink:href="./images/sprites/sprite.svg#calendar-icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <label>Сколько вас?</label>
+                    <select>
+                        <option value="" disabled selected>Количество гостей</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <svg class="select-arrow">
+                        <use xlink:href="./images/sprites/sprite.svg#sign-icon"></use>
+                    </svg>
+                    <div class="header__checkbox">
+                        <input type="checkbox" id="checkbox" checked/>
+                        <label for="checkbox">Оплата при заезде</label>
+                    </div>
+                    <div class="header__button">
+                        <button type="submit">Найти гостиницу</button>
+                    </div>
+                </form>
+                <img src="./images/jpg/love-icon-1.png" alt="love-icon" class="icon-1">
+                <img src="./images/jpg/love-icon-2.png" alt="love-icon" class="icon-2">
+                <svg class="comment-1">
+                    <use xlink:href="./images/sprites/sprite.svg#bubble-1"></use>
+                </svg>
+                <svg class="comment-2">
+                    <use xlink:href="./images/sprites/sprite.svg#bubble-2"></use>
+                </svg>
+			</div>
+		</header>
+        <main>
+            <section class="about">
+                <a name="about"></a>
+                <div class="about__container">
+                    <div class="about__book">
+                        <div class="about__book-top">
+                            <img src="images/jpg/love-icon-3.png" alt="love-icon" class="image">
+                            <h2>Бронируем номер менее чем за 1 минуту</h2>
+                        </div>
+                        <div class="about__book-bottom">
+                            <p>На сайте представлены тарифы только с моментальным подтверждением бронирования. Первоклассная круглосуточная поддержка поможет с решением любых вопросов.</p>
+                        </div>
+                    </div>
+                    <div class="about__description">
+                        <div class="description-title">
+                            <h2>О Гостишке</h2>
+                        </div>
+                        <div class="description-image">
+                            <img src="images/jpg/gostishka-1.jpg" alt="love-icon" class="image">
+                            <img src="images/jpg/gostishka-2.jpg" alt="love-icon" class="image">
+                            <svg>
+                                <use xlink:href="./images/sprites/sprite.svg#gostishka-pointer"></use>
+                            </svg>
+                        </div>
+                        <div class="description-text">
+                            <h2>О Гостишке</h2>
+                            <p>Мы экономим ваши деньги, получая выгодные тарифы от мировых поставщиков и напрямую от тысяч гостиниц. Мы работаем напрямую с гостиницами в разных странах мира. Это позволяет нам предоставлять вам лучшие цены среди всех доступных.</p>
+                            <div class="statistic">
+                                <div class="item">
+                                    <p class="count">1.2k</p>
+                                    <p class="title">гостиниц</p>
+                                </div>
+                                <div class="item">
+                                    <p class="count">4.8k</p>
+                                    <p class="title">номеров</p>
+                                </div>
+                                <div class="item">
+                                    <p class="count">186</p>
+                                    <p class="title">стран</p>
+                                </div>
+                            </div>
+                            <p>Мы фиксируем все цены в вашей валюте на момент бронирования. Больше никаких волнений из-за изменившегося курса валют. Мы также дарим 2% кешбека на счёт Гостишки при каждом бронировании</p>
+                            <div class="description-button">
+                                <button type="button">Узнать больше</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="capital">
+                <div class="capital__container">
+                    <a name="capital"></a>
+                    <div class="capital__top">
+                        <h2>Гостишка в Шанхае</h2>
+                        <p>Шанхай, Китай</p>
+                    </div>
+                    <div class="capital__middle">
+                        <img src="images/jpg/shanghai.jpg" alt="love-icon" class="image">
+                        <div class="description">
+                            <p>Современный удобный отель с хорошим месторасположением, открытым бассейном и отличным тренажёрным залом.</p>
+                            <h2>Шанхай, Роман Дорошенко</h2>
+                        </div>
+                    </div>
+                    <div class="capital__bottom">
+                        <p>Самый крупный город Китая – в то же время и самый многонациональный. Его гости могут побывать в прошлом, настоящем и будущем одновременно.</p>
+                        <div class="capital__button">
+                            <button type="button">Забукать</button>
+                            <p>$40<span>/ночь</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="hotels">
+                <div class="hotels__container">
+                    <div class="hotels__title">
+                        <h2>Найди свою лучшую гостиницу</h2>
+                        <p>Отметьте то, что важно именно для вас, и мы покажем результаты поиска с учётом вашего выбора</p>
+                        <div class="bottom">
+                            <button type="button">Показать всё</button>
+                        </div>
+                    </div>
+                    <div class="choice">
+                        <div class="item">
+                            <a href="https://google.com">
+                                <img src="./images/jpg/de-luna.jpg" alt="picture">
+                                <h3>De’Luna</h3>
+                                <p>Сингапур</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://google.com">
+                                <img src="images/jpg/ina-tretes.jpg" alt="picture">
+                                <h3>Ina Tretes</h3>
+                                <p>Сингупур</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://google.com">
+                                <img src="images/jpg/de-light.jpg" alt="picture">
+                                <h3>De’light</h3>
+                                <p>Сингапур</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://google.com">
+                                <img src="images/jpg/mercusuar-tower.jpg" alt="picture">
+                                <h3>Mercusuar Tower</h3>
+                                <p>Сингапур</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="reviews__container">
+                    <div class="reviews__items owl-carousel">
+                        <div class="item">
+                            <div class="review__block">
+                                <div class="review__image">
+                                    <img src="images/jpg/review.jpg" alt="picture">
+                                </div>
+                                <div class="review__text">
+                                    <p>Доволен работой сервиса. Всё очень удобно, функционально, а главное быстро. Забронировал место в гостинице за считанные минуты. Сразу оплатил без проблем, голова не болела за обмены валют и курсы. Отдельное спасибо за дополнительные услуги по трансферу из аэропорта в гостиницу и возможность арендовать автомобиль уже на месте. Спасибо за хороший сервис!</p>
+                                    <div class="text-rating">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19.022" height="18.09" viewBox="0 0 19.022 18.09"><path fill="#f2994a" d="M9.511 14.8l-5.878 3.29 1.312-6.607L0 6.91l6.689-.793L9.511 0l2.822 6.117 6.689.793-4.946 4.573 1.313 6.607z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19.022" height="18.09" viewBox="0 0 19.022 18.09"><path fill="#f2994a" d="M9.511 14.8l-5.878 3.29 1.312-6.607L0 6.91l6.689-.793L9.511 0l2.822 6.117 6.689.793-4.946 4.573 1.313 6.607z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19.022" height="18.09" viewBox="0 0 19.022 18.09"><path fill="#f2994a" d="M9.511 14.8l-5.878 3.29 1.312-6.607L0 6.91l6.689-.793L9.511 0l2.822 6.117 6.689.793-4.946 4.573 1.313 6.607z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19.022" height="18.09" viewBox="0 0 19.022 18.09"><path fill="#f2994a" d="M9.511 14.8l-5.878 3.29 1.312-6.607L0 6.91l6.689-.793L9.511 0l2.822 6.117 6.689.793-4.946 4.573 1.313 6.607z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19.021" height="18.091" viewBox="0 0 19.021 18.091"><path fill="#f2994a" d="M3.631 18.091l1.314-6.606L0 6.91l6.689-.793L9.511 0l2.821 6.117 6.689.793-4.945 4.574 1.312 6.6L9.511 14.8l-5.878 3.29zm5.879-5.2l3.539 1.981-.791-3.978 2.978-2.754-4.026-.478-1.7-3.682-1.7 3.683-4.027.476 2.977 2.754-.791 3.978L9.51 12.89z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-author">
+                                <h2>Денис Крикун</h2>
+                                <p>Сингапур</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="review__block">
+                                <div class="review__image">
+                                    <img src="images/jpg/review.jpg" alt="picture">
+                                </div>
+                                <div class="review__text">
+                                    <p>Доволен работой сервиса. Всё очень удобно, функционально, а главное быстро. Забронировал место в гостинице за считанные минуты. Сразу оплатил без проблем, голова не болела за обмены валют и курсы. Отдельное спасибо за дополнительные услуги по трансферу из аэропорта в гостиницу и возможность арендовать автомобиль уже на месте. Спасибо за хороший сервис!</p>
+                                    <div class="text-rating">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19.022" height="18.09" viewBox="0 0 19.022 18.09"><path fill="#f2994a" d="M9.511 14.8l-5.878 3.29 1.312-6.607L0 6.91l6.689-.793L9.511 0l2.822 6.117 6.689.793-4.946 4.573 1.313 6.607z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19.022" height="18.09" viewBox="0 0 19.022 18.09"><path fill="#f2994a" d="M9.511 14.8l-5.878 3.29 1.312-6.607L0 6.91l6.689-.793L9.511 0l2.822 6.117 6.689.793-4.946 4.573 1.313 6.607z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19.022" height="18.09" viewBox="0 0 19.022 18.09"><path fill="#f2994a" d="M9.511 14.8l-5.878 3.29 1.312-6.607L0 6.91l6.689-.793L9.511 0l2.822 6.117 6.689.793-4.946 4.573 1.313 6.607z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19.022" height="18.09" viewBox="0 0 19.022 18.09"><path fill="#f2994a" d="M9.511 14.8l-5.878 3.29 1.312-6.607L0 6.91l6.689-.793L9.511 0l2.822 6.117 6.689.793-4.946 4.573 1.313 6.607z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19.021" height="18.091" viewBox="0 0 19.021 18.091"><path fill="#f2994a" d="M3.631 18.091l1.314-6.606L0 6.91l6.689-.793L9.511 0l2.821 6.117 6.689.793-4.945 4.574 1.312 6.6L9.511 14.8l-5.878 3.29zm5.879-5.2l3.539 1.981-.791-3.978 2.978-2.754-4.026-.478-1.7-3.682-1.7 3.683-4.027.476 2.977 2.754-.791 3.978L9.51 12.89z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-author">
+                                <h2>Денис Крикун</h2>
+                                <p>Сингапур</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts">
+                <a name="contacts"></a>
+                <div class="contacts__container">
+                    <div class="footer__top">
+                        <article class="about">
+                            <h2>Гостишка</h2>
+                            <p>Мы — лидеры в индустрии гостеприимства. Наши результаты являются следствием чрезвычайных усилий и любви к своему делу.</p>
+                        </article>
+                        <article class="navigation">
+                            <h2>Навигация</h2>
+                            <ul class="navigation__menu-list">
+                                <li class="menu__item"><a href="#">Главная</a></li>
+                                <li class="menu__item"><a href="#capital">Найти гостиницу</a></li>
+                                <li class="menu__item"><a href="#about">О нас</a></li>
+                                <li class="menu__item"><a href="#contacts">Контакты</a></li>
+                            </ul>
+                        </article>
+                        <article class="connect">
+                            <h2>Связаться с нами</h2>
+                            <div class=phone>
+                                <a href="tel:0800330708">0 800 33 07 08</a>
+                            </div>
+                            <div class="mailto">
+                                <a href="mailto:gostishka@lectrum.io">gostishka@lectrum.io</a>
+                            </div>
+                            <div class="mail">
+                                <a href="mailto:gostishka.io">gostishka.io</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="all__rights">
+                            <h2>2020 © Гостишка. Все права защищены</h2>
+                        </div>
+                        <div class="footer__social">
+                            <svg class="instagram">
+                                <use xlink:href="./images/sprites/sprite.svg#instagram-logo"></use>
+                            </svg>
+                            <svg class="facebook">
+                                <use xlink:href="./images/sprites/sprite.svg#facebook-icon"></use>
+                            </svg>
+                            <svg class="twitter">
+                                <use xlink:href="./images/sprites/sprite.svg#twitter-icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</main>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="./library/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                navText: [$("<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" data-name=\"Icon / Line / arrow-right-line\" viewBox=\"0 0 24 24\"><path fill=\"#fff\" d=\"M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z\"/></svg>\n"),$("<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" data-name=\"Icon / Line / arrow-right-line\" viewBox=\"0 0 24 24\"><path fill=\"#fff\" d=\"M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z\"/></svg>\n")],
+                items: 1,
+                singleItem: true,
+                dots: false,
+                lazyLoad: false,
+            })
+        </script>
+    </body>
+</html>
